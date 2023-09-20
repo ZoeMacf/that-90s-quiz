@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap');
 
 
+
 /* Text-shadow was used to create a border around text source for values was https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
 h1 {
     font-family: 'Shrikhand', cursive;
@@ -11,6 +12,10 @@ h1 {
 }
 
 .game-container {
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+    margin: auto;
     background-color: beige;
     border: solid;
 }
