@@ -21,7 +21,7 @@ h1 {
 }
 
 .question-area {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -32,4 +32,8 @@ h1 {
 .options {
     padding: 4px;
     margin: 4px;
+}
+
+.rules-area {
+    display: none;
 }
