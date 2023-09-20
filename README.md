@@ -37,9 +37,13 @@ Users can test their knowledge of the 90s across many genres.
 ### User Stories
 
 #### First Time Visitor Goals
- 
 
+- I want to easily access the rules of the quiz.
+- I want to be able to start the quiz with ease.
+- I want to be able to view both the current score and a timer.
 #### Returning Visitor Goals
+
+- I would like to be able to view my previous score.
 
 #### Frequent Visitor Goals
 
