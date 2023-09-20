@@ -1,0 +1,18 @@
+.game-container {
+    background-color: beige;
+    border: solid;
+}
+
+.question-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    margin: 2px;
+}
+
+.options {
+    padding: 4px;
+    margin: 4px;
+}
