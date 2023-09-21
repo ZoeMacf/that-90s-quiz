@@ -1,5 +1,8 @@
 let currentQuestion = 0;
 let userScore = 0;
+let choices = document.getElementsByClassName('options');
+const nextQuestion = document.getElementsByClassName('next-question');
+
 
 let questions = [
     {
