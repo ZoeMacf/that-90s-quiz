@@ -81,6 +81,13 @@ function displayQuestion() {
 }
 
 function nextQuestion() {
+    currentQuestionNumber++;
+    if(currentQuestionNumber < questions.length){
+        displayQuestion();
+    } else {
+        alert('No more questions!');
+    }
+    
 
 }
 
@@ -93,3 +100,4 @@ function addToScore() {
 }
 
 document.addEventListener('DOMContentLoaded', startQuiz);
+nextButton.addEventListener('click', nextQuestion);
