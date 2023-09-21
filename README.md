@@ -31,7 +31,7 @@
 
 ### Initial Discussion
 
-Users can test their knowledge of the 90s across many genres.
+Users can test their knowledge of the 90's across many genres.
 
 
 ### User Stories
@@ -54,7 +54,7 @@ Users can test their knowledge of the 90s across many genres.
 
 ### Imagery
 
-### Simon Says Color Scheme 
+### That 90's Quiz Color Scheme 
 
 
 ### Wireframes
