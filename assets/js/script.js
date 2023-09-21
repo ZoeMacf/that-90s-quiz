@@ -60,6 +60,9 @@ function showRules() {
 }
 
 function startQuiz() {
+    currentQuestionNumber = 0;
+    userScore = 0;
+    displayQuestion();
 
 }
 
@@ -88,3 +91,5 @@ function checkAnswer() {
 function addToScore() {
 
 }
+
+document.addEventListener('DOMContentLoaded', startQuiz);
