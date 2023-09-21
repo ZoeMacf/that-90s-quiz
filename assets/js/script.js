@@ -1,7 +1,3 @@
-let currentQuestion = 0;
-let userScore = 0;
-let choices = document.getElementsByClassName('options');
-
 let questions = [
     {
         question: "Which American rock band, formed in 1990, released the hit song 'Under the Bridge'?",
@@ -48,6 +44,15 @@ let questions = [
         answer: 'D'
     }
 ]
+
+const questionContent = document.getElementById('question');
+const answerA = document.getElementById('A');
+const answerB= document.getElementById('B');
+const answerC = document.getElementById('C');
+const answerD = document.getElementById('D');
+const nextButton = document.getElementById('next');
+let currentQuestionNumber = 0;
+let userScore = 0;
 
 
 function showRules() {
