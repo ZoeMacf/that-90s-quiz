@@ -68,8 +68,8 @@ function setTimer() {
 }
 
 function displayQuestion() {
-    let questionText = questions[currentQuestionNumber].questions;
-    questionContent.innerHTML = questionText.questions;
+    let questionText = questions[currentQuestionNumber];
+    questionContent.innerHTML = questionText.question;
     answerA.innerHTML = questionText.answerA;
     answerB.innerHTML = questionText.answerB;
     answerC.innerHTML = questionText.answerC;
