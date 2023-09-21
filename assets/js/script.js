@@ -73,10 +73,10 @@ function setTimer() {
 function displayQuestion() {
     let questionText = questions[currentQuestionNumber];
     questionContent.innerHTML = questionText.question;
-    answerA.innerHTML = questionText.answerA;
-    answerB.innerHTML = questionText.answerB;
-    answerC.innerHTML = questionText.answerC;
-    answerD.innerHTML = questionText.answerD;
+    answerA.innerHTML = questionText.A;
+    answerB.innerHTML = questionText.B;
+    answerC.innerHTML = questionText.C;
+    answerD.innerHTML = questionText.D;
 
 }
 
