@@ -1,4 +1,4 @@
-let questions = [
+let questionsArray = [
     {
         question: "Which American rock band, formed in 1990, released the hit song 'Under the Bridge'?",
         A: "Foo Fighters",
@@ -45,13 +45,13 @@ let questions = [
     }
 ]
 
-const questionContent = document.getElementById('question');
+const questionContainer = document.getElementById('question');
 const answerA = document.getElementById('A');
 const answerB= document.getElementById('B');
 const answerC = document.getElementById('C');
 const answerD = document.getElementById('D');
 const nextButton = document.getElementById('next');
-let currentQuestionNumber = 0;
+let currentQuestion = 0;
 let userScore = 0;
 
 
@@ -60,7 +60,7 @@ function showRules() {
 }
 
 function startQuiz() {
-    currentQuestionNumber = 0;
+    currentQuestion = 0;
     userScore = 0;
     displayQuestion();
 
@@ -71,8 +71,8 @@ function setTimer() {
 }
 
 function displayQuestion() {
-    let questionText = questions[currentQuestionNumber];
-    questionContent.innerHTML = questionText.question;
+    let questionText = questionsArray[currentQuestion];
+    questionContainer.innerHTML = questionText.question;
     answerA.innerHTML = questionText.A;
     answerB.innerHTML = questionText.B;
     answerC.innerHTML = questionText.C;
@@ -81,8 +81,8 @@ function displayQuestion() {
 }
 
 function nextQuestion() {
-    currentQuestionNumber++;
-    if(currentQuestionNumber < questions.length){
+    currentQuestion++;
+    if(currentQuestion < questions.length){
         displayQuestion();
     } else {
         alert('No more questions!');
