@@ -53,7 +53,7 @@ function setTimer() {
 
 function displayQuestion() {
     let questionText = questionsArray[currentQuestion];
-    questionContainer.innerHTML = questionText.question; 
+    questionContainer.innerHTML = questionText.question;
 
 }
 
