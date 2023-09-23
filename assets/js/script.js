@@ -40,7 +40,9 @@ let userScore = 0;
 function showRules() {
 
 }
-
+/**
+ * Sets currentQuestion and userScore to 0 and will then display the question. 
+ */
 function startQuiz() {
     currentQuestion = 0;
     userScore = 0;
@@ -51,7 +53,12 @@ function startQuiz() {
 function setTimer() {
 
 }
-
+/**
+ * Sets the value questionText to be equal to questionsArray with the index set to currentQuestion value.
+ * The questionContainer.innerHTML is set to equal the question at that index value. 
+ * To get the answers the function will then iterate through the array of answers, create a button for each one
+ * and append to the answer-container div.
+ */
 function displayQuestion() {
     let questionText = questionsArray[currentQuestion];
     questionContainer.innerHTML = questionText.question;
@@ -62,7 +69,9 @@ function displayQuestion() {
         answerContainer.appendChild(button);
     })
     }
-
+/**This function will check to see if the answerContainer has a firstChild appended
+ * if this is the case it will remove it and then run the displayQuestion function. 
+ */
 function restState() {
     while(answerContainer.firstChild){
         answerContainer.removeChild(answerContainer.firstChild);
@@ -70,6 +79,9 @@ function restState() {
     displayQuestion();
 }
 
+/**This function will increment currentQuestion by 1 then check to see if it is less than the length
+ * of questionArray, if this is the case it will display the next question then call resetState.
+ */
 function nextQuestion() {
     currentQuestion++;
     if(currentQuestion < questionsArray.length){
