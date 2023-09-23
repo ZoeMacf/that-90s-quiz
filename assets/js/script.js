@@ -14,7 +14,7 @@ let questionsArray = [
     {
         question: "Who played the title character in the 1990s TV show “Buffy the Vampire Slayer”?",
         answers: ["Sarah Michelle Gellar","Jennifer Love Hewitt","Alicia Silverstone","Melissa Joan Hart"],
-        answer: 0
+        correct: 0
     },
 
     {
@@ -32,6 +32,7 @@ let questionsArray = [
 
 const questionContainer = document.getElementById('question');
 const nextButton = document.getElementById('next');
+const answerContainer = document.getElementById('answer-container');
 let currentQuestion = 0;
 let userScore = 0;
 
@@ -54,12 +55,17 @@ function setTimer() {
 function displayQuestion() {
     let questionText = questionsArray[currentQuestion];
     questionContainer.innerHTML = questionText.question;
-
-}
+    let answers = questionsArray[currentQuestion].answers;
+    answers.forEach(answer => {
+        let button = document.createElement('button');
+        button.innerHTML = answer;
+        answerContainer.append(button);
+    })
+    }
 
 function nextQuestion() {
     currentQuestion++;
-    if(currentQuestion < questions.length){
+    if(currentQuestion < questionsArray.length){
         displayQuestion();
     } else {
         alert('No more questions!');
