@@ -19,8 +19,8 @@ let questionsArray = [
 
     {
         question: "What was the highest-grossing film of the 1990s?",
-        answers: ['shawshank', 'titanic', 'bodyguard', 'braveheart'],
-        correct: 'titanic'
+        answers: ['Shawshank', 'Titanic', 'Bodyguard', 'Braveheart'],
+        correct: 'Titanic'
     },
 
     {
