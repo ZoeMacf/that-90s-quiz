@@ -72,7 +72,7 @@ function displayQuestion() {
 /**This function will check to see if the answerContainer has a firstChild appended
  * if this is the case it will remove it and then run the displayQuestion function. 
  */
-function restState() {
+function resetState() {
     while(answerContainer.firstChild){
         answerContainer.removeChild(answerContainer.firstChild);
     }
@@ -85,11 +85,11 @@ function restState() {
 function nextQuestion() {
     currentQuestion++;
     if(currentQuestion < questionsArray.length){
+        resetState();
         displayQuestion();
     } else {
         alert('No more questions!');
     }
-    restState();
     
 
 }
