@@ -85,8 +85,8 @@ function resetState() {
 function nextQuestion() {
     currentQuestion++;
     if(currentQuestion < questionsArray.length){
-        resetState();
         displayQuestion();
+        resetState();
     } else {
         alert('No more questions!');
     }
