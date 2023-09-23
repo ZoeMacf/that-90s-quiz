@@ -33,6 +33,7 @@ let questionsArray = [
 const questionContainer = document.getElementById('question');
 const nextButton = document.getElementById('next');
 const answerContainer = document.getElementById('answer-container');
+
 let currentQuestion = 0;
 let userScore = 0;
 
@@ -47,12 +48,8 @@ function startQuiz() {
     currentQuestion = 0;
     userScore = 0;
     displayQuestion();
-
 }
 
-function setTimer() {
-
-}
 /**
  * Sets the value questionText to be equal to questionsArray with the index set to currentQuestion value.
  * The questionContainer.innerHTML is set to equal the question at that index value. 
