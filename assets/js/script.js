@@ -59,9 +59,16 @@ function displayQuestion() {
     answers.forEach(answer => {
         let button = document.createElement('button');
         button.innerHTML = answer;
-        answerContainer.append(button);
+        answerContainer.appendChild(button);
     })
     }
+
+function restState() {
+    while(answerContainer.firstChild){
+        answerContainer.removeChild(answerContainer.firstChild);
+    }
+    displayQuestion();
+}
 
 function nextQuestion() {
     currentQuestion++;
@@ -70,6 +77,7 @@ function nextQuestion() {
     } else {
         alert('No more questions!');
     }
+    restState();
     
 
 }
