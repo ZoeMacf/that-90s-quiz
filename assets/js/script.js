@@ -2,31 +2,31 @@ let questionsArray = [
     {
         question: "Which American rock band, formed in 1990, released the hit song 'Under the Bridge'?",
         answers: ["Foo Fighters","Weezer","Red Hot Chili Peppers","Blink-182"],
-        correct: 2
+        correct: "Red Hot Chili Peppers"
     },
 
     {
         question: "What computer game, released in 1991, challenged players to guide a group of green-haired creatures through various obstacles?",
         answers: ["Lemurs","Monkeys","Frogger","Lemmings"],
-        correct: 3
+        correct: "Lemmings"
     },
 
     {
         question: "Who played the title character in the 1990s TV show “Buffy the Vampire Slayer”?",
-        answers: ["Sarah Michelle Gellar","Jennifer Love Hewitt","Alicia Silverstone","Melissa Joan Hart"],
-        correct: 0
+        answers: ["Sarah Michelle Gellar", "Jennifer Love Hewitt","Alicia Silverstone","Melissa Joan Hart"],
+        correct: "Sarah Michelle Gellar"
     },
 
     {
         question: "What was the highest-grossing film of the 1990s?",
         answers: ['shawshank', 'titanic', 'bodyguard', 'braveheart'],
-        correct: 1
+        correct: 'titanic'
     },
 
     {
         question: "Which 1990s computer game challenged players to lead a tribe of people through various historical eras by researching technologies, expanding territories, and engaging in diplomacy and warfare?",
         answers: ["Age of Empires", "SimCity", "Myst", "Civilization"],
-        correct: 3
+        correct: "Civilization"
     }
 ]
 
@@ -95,6 +95,19 @@ function nextQuestion() {
 }
 
 function checkAnswer() {
+    answerContainer.addEventListener('click', function(evt) {
+        let userInput = evt.target;
+        console.log(`Clicked button: ${userInput.textContent}`);
+
+        let correctAnswers = questionsArray[currentQuestion].correct;
+
+        if(userInput.textContent === correctAnswers){
+            console.log('You did it!');
+            addToScore();
+        } else {
+            console.log('Try again!');
+        }
+      });
 
 }
 
