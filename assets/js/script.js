@@ -112,8 +112,10 @@ function checkAnswer() {
 }
 
 function addToScore() {
+    document.getElementById('score').innerText = ++userScore;
 
 }
 
 document.addEventListener('DOMContentLoaded', startQuiz);
 nextButton.addEventListener('click', nextQuestion);
+checkAnswer();
