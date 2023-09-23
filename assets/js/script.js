@@ -63,6 +63,7 @@ function displayQuestion() {
     answers.forEach(answer => {
         let button = document.createElement('button');
         button.innerHTML = answer;
+        button.classList.add('answer-btn');
         answerContainer.appendChild(button);
     })
     }
