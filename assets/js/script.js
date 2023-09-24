@@ -96,7 +96,11 @@ function nextQuestion() {
     
 
 }
-
+//Code used to check user button input was found here https://stackoverflow.com/questions/66193592/how-i-know-which-button-been-clicked-in-class-of-buttons
+/**
+ * Function contains an event listener to check which of the answer buttons are clicked, if it is correct it will add to the score
+ * and highlight the answer as being correct, if incorrect score is not affected and answer will be highlighted to show incorrect. 
+ */
 function checkAnswer() {
     answerContainer.addEventListener('click', function(evt) {
         let userInput = evt.target;
