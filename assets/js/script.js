@@ -100,15 +100,13 @@ function nextQuestion() {
 function checkAnswer() {
     answerContainer.addEventListener('click', function(evt) {
         let userInput = evt.target;
-        console.log(`Clicked button: ${userInput.textContent}`);
 
         let correctAnswers = questionsArray[currentQuestion].correct;
 
         if(userInput.textContent === correctAnswers){
-            console.log('You did it!');
             addToScore();
         } else {
-            console.log('Try again!');
+            
         }
       });
 
