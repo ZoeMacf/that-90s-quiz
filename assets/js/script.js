@@ -89,9 +89,11 @@ function nextQuestion() {
         resetState();
     } else {
         questionContainer.classList.add('hide-questions');
+        let scoreHeading = document.createElement('h2');
+        scoreHeading.innerText = `You answered ${userScore} out of ${currentQuestion} correct!`;
         finalScore.classList.remove('hide-final-score');
         finalScore.classList.add('show-final-score');
-        finalScore.innerText = `You answered ${userScore} out of ${currentQuestion} correct!`;
+        finalScore.append(scoreHeading);
     }
     
 
