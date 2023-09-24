@@ -30,6 +30,7 @@ let questionsArray = [
     }
 ]
 
+const questionContainer = document.getElementById('question-container');
 const questionContent = document.getElementById('question-content');
 const nextButton = document.getElementById('next');
 const answerContainer = document.getElementById('answer-container');
@@ -86,7 +87,7 @@ function nextQuestion() {
         displayQuestion();
         resetState();
     } else {
-        alert('No more questions!');
+        questionContainer.classList.add('hide-questions');
     }
     
 
