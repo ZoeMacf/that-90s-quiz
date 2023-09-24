@@ -88,15 +88,29 @@ function nextQuestion() {
         displayQuestion();
         resetState();
     } else {
-        questionContainer.classList.add('hide-questions');
-        let scoreHeading = document.createElement('h2');
-        scoreHeading.innerText = `You answered ${userScore} out of ${currentQuestion} correct!`;
-        finalScore.classList.remove('hide-final-score');
-        finalScore.classList.add('show-final-score');
-        finalScore.append(scoreHeading);
+        nextButton.classList.add('hide-nxt-btn');
+        showFinalScore();
     }
-    
+}  
 
+
+function showFinalScore() {
+        let finishButton = document.createElement('button');
+        finishButton.innerText = 'Finish Quiz';
+        finishButton.classList.add('finish-btn');
+        questionContainer.append(finishButton);
+
+        finishButton.addEventListener('click', function() {
+         questionContainer.classList.add('hide-questions');
+         let scoreHeading = document.createElement('h2');
+
+         scoreHeading.innerText = `You answered ${userScore} out of ${currentQuestion} correct!`;
+         finalScore.classList.remove('hide-final-score');
+
+         finalScore.classList.add('show-final-score');
+         finalScore.append(scoreHeading);
+
+        });
 }
 //Code used to check user button input was found here https://stackoverflow.com/questions/66193592/how-i-know-which-button-been-clicked-in-class-of-buttons
 /**
