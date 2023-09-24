@@ -82,6 +82,12 @@ Users can test their knowledge of the 90's across many genres.
 
 ## Technologies Used
 
+- #### [Visual Studio Code](https://code.visualstudio.com/)
+The entirety of the site was coded using Visual Studio Code.
+
+- #### [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiA14WdBhD8ARIsANao07g6CkndNmxQPlHP92mM3VQBwb6lbQIg5FPinhmNFxWsAnM7BpA_PukaAldMEALw_wcB)
+  Balsamiq was used to help create the initial design for the websites layout.
+
 ### Languages Used
 
 - The main structure of the website was created using HTML.
