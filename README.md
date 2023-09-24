@@ -84,6 +84,9 @@ Users can test their knowledge of the 90's across many genres.
 
 ### Languages Used
 
+- The main structure of the website was created using HTML.
+- The styling of the website was created with CSS.
+- The structure and workings of the quiz itself was created using Javascript.
 
 ## Deployment & Local Development
 
