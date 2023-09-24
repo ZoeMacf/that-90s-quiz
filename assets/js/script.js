@@ -30,7 +30,7 @@ let questionsArray = [
     }
 ]
 
-const questionContainer = document.getElementById('question');
+const questionContent = document.getElementById('question-content');
 const nextButton = document.getElementById('next');
 const answerContainer = document.getElementById('answer-container');
 
@@ -58,7 +58,7 @@ function startQuiz() {
  */
 function displayQuestion() {
     let questionText = questionsArray[currentQuestion];
-    questionContainer.innerHTML = questionText.question;
+    questionContent.innerHTML = questionText.question;
     let answers = questionsArray[currentQuestion].answers;
     answers.forEach(answer => {
         let button = document.createElement('button');
