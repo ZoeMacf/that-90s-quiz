@@ -34,6 +34,7 @@ const questionContainer = document.getElementById('question-container');
 const questionContent = document.getElementById('question-content');
 const nextButton = document.getElementById('next');
 const answerContainer = document.getElementById('answer-container');
+const finalScore = document.getElementById('final-score');
 
 let currentQuestion = 0;
 let userScore = 0;
@@ -88,6 +89,9 @@ function nextQuestion() {
         resetState();
     } else {
         questionContainer.classList.add('hide-questions');
+        finalScore.classList.remove('hide-final-score');
+        finalScore.classList.add('show-final-score');
+        finalScore.innerText = `You answered ${userScore} out of ${currentQuestion} correct!`;
     }
     
 
@@ -111,8 +115,7 @@ function checkAnswer() {
 }
 
 function addToScore() {
-    document.getElementById('score').innerText = ++userScore;
-
+    userScore++;
 }
 
 document.addEventListener('DOMContentLoaded', startQuiz);
