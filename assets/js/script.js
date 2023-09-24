@@ -100,13 +100,12 @@ function nextQuestion() {
 function checkAnswer() {
     answerContainer.addEventListener('click', function(evt) {
         let userInput = evt.target;
-
         let correctAnswers = questionsArray[currentQuestion].correct;
-
         if(userInput.textContent === correctAnswers){
             addToScore();
+            userInput.classList.add('correct-answer');
         } else {
-            
+            userInput.classList.add('wrong-answer');
         }
       });
 
