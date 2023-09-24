@@ -59,18 +59,11 @@ Users can test their knowledge of the 90's across many genres.
 
 ### Wireframes
 
-#### Home 
-
-#### Menu
-
-#### Gallery
-
-#### Reviews
-
+#### Quiz
 
 ## Final Design
 
-### Home 
+### Quiz
 
 #### Desktop Version
 
