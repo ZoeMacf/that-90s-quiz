@@ -50,7 +50,6 @@ h2 {
     border: none;
     padding: 12px 28px;
     text-align: center;
-    text-decoration: none;
     font-size: 16px;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -69,12 +68,17 @@ h2 {
 }
 
 .next-btn {
-    height: 30px;
-    width: 100x;
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
-    margin: 15px;
+    height: 40px;
+    width: 100x;
+    margin: 5px;
+    background-color: #fff; 
+    border: none;
+    padding: 12px 28px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 8px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: 'Roboto', sans-serif;
