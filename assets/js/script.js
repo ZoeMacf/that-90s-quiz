@@ -30,6 +30,7 @@ let questionsArray = [
     }
 ]
 
+const startQuizContainer = document.getElementById('quiz-start');
 const gameContainer = document.getElementById('game-content');
 const questionContainer = document.getElementById('question-container');
 const questionContent = document.getElementById('question-content');
@@ -52,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function startQuiz() {
     questionContainer.classList.remove('hide-questions');
+    startQuizContainer.classList.add('hide-questions');
+
     currentQuestion = 0;
     userScore = 0;
     displayQuestion();
