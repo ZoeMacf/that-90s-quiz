@@ -147,7 +147,7 @@ function checkAnswer() {
     let userInput = evt.target;
     let correctAnswers = questionsArray[currentQuestion].correct;
     if (userInput.textContent === correctAnswers) {
-      addToScore();
+      userScore++
       userInput.classList.add("correct-answer");
     } else {
       userInput.classList.add("wrong-answer");
@@ -157,10 +157,6 @@ function checkAnswer() {
 
 function restartQuiz() {
     location.reload();
-}
-
-function addToScore() {
-  userScore++;
 }
 
 nextButton.addEventListener("click", nextQuestion);
