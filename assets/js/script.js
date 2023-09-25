@@ -130,10 +130,10 @@ function showFinalScore() {
     finalScore.classList.add("show-final-score");
     finalScore.append(scoreHeading);
 
-    let restartQuiz = document.createElement("button");
-    restartQuiz.classList.add("finish-btn");
-    restartQuiz.innerText = "Restart Quiz";
-    finalScore.append(restartQuiz);
+    let restartQuizbtn = document.createElement('button');
+    restartQuizbtn.innerHTML = 'Restart Quiz';
+    finalScore.append(restartQuizbtn);
+    restartQuizbtn.addEventListener('click', restartQuiz);
   });
 }
 //Code used to check user button input was found here https://stackoverflow.com/questions/66193592/how-i-know-which-button-been-clicked-in-class-of-buttons
@@ -152,6 +152,10 @@ function checkAnswer() {
       userInput.classList.add("wrong-answer");
     }
   });
+}
+
+function restartQuiz() {
+    location.reload();
 }
 
 function addToScore() {
