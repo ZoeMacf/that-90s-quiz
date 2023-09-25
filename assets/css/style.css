@@ -126,17 +126,8 @@ text-align: center;
     font-weight: 700;
 }
 
-.hide-nxt-btn {
+.hide {
     display: none;
-}
-
-.hide-questions {
-    display: none;
-}
-
-.hide-final-score {
-    display: hidden;
-    text-align: center;
 }
 
 .show-final-score {

@@ -43,7 +43,7 @@ let currentQuestion = 0;
 let userScore = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
-    questionContainer.classList.add('hide-questions');
+    questionContainer.classList.add('hide');
     startButton.addEventListener('click', startQuiz);
 
 })
@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
  * Sets currentQuestion and userScore to 0 and will then display the question. 
  */
 function startQuiz() {
-    questionContainer.classList.remove('hide-questions');
-    startQuizContainer.classList.add('hide-questions');
+    questionContainer.classList.remove('hide');
+    startQuizContainer.classList.add('hide');
 
     currentQuestion = 0;
     userScore = 0;
@@ -96,7 +96,7 @@ function nextQuestion() {
         displayQuestion();
         resetState();
     } else {
-        nextButton.classList.add('hide-nxt-btn');
+        nextButton.classList.add('hide');
         showFinalScore();
     }
 }  
@@ -113,11 +113,11 @@ function showFinalScore() {
         questionContainer.append(finishButton);
 
         finishButton.addEventListener('click', function() {
-         questionContainer.classList.add('hide-questions');
+         questionContainer.classList.add('hide');
          let scoreHeading = document.createElement('h2');
 
          scoreHeading.innerText = `You answered ${userScore} out of ${currentQuestion} correct!`;
-         finalScore.classList.remove('hide-final-score');
+         finalScore.classList.remove('hide');
 
          finalScore.classList.add('show-final-score');
          finalScore.append(scoreHeading);
