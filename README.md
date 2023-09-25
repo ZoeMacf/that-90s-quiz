@@ -98,11 +98,35 @@ The entirety of the site was coded using Visual Studio Code.
 
 ### Deployment
 
-### Local Development
+This website was created using Visual Studio Code and pushed to GitHub under the repository name 'that-90s-quiz'.
 
+GitHub pages was then used to deploy the live version of the site, the following instructions for this can be found below:
+
+1. Log in to GitHub account (or sign up if there is no account)
+2. Locate the repository for the project, 'that-90s-quiz'
+3. Access the settings page.
+4. In the navigation bar on the left-hand side choose the link for Pages.
+5. When choosing a source, choose the main branch from the drop down menu, and select root from the folder name. 
+6. Finally click Save, the live GitHub page for your site will then been deployed.
+
+### Local Development
 #### How to Fork
 
+In order to fork the repository the following must be done:
+
+1. Log into your GitHub account or create one. 
+2. Locate the repository for this project under, ZoeMacf/that-90s-quiz/
+3. Finally, click the fork button in the top right corner.
+
 #### How to Clone
+
+In order to clone the repository for local development you will need to follow the below:
+
+1. Log into your GitHub account. 
+2. Go to the repository for this project at ZoeMacf/that-90s-quiz/
+3. Next you will need to click on the green '<> Code' button and then choose your preferred method.
+4. Access the terminal in your code editor, create a new directory that you would like to use for the clone. 
+5. Then type 'git clone' into your code editor's terminal, paste the link from step 3 and hit enter. 
 ## Testing
 
 
