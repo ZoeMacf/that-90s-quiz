@@ -30,23 +30,27 @@ let questionsArray = [
     }
 ]
 
+const gameContainer = document.getElementById('game-content');
 const questionContainer = document.getElementById('question-container');
 const questionContent = document.getElementById('question-content');
 const nextButton = document.getElementById('next');
+const startButton = document.getElementById('start-btn');
 const answerContainer = document.getElementById('answer-container');
 const finalScore = document.getElementById('final-score');
 
 let currentQuestion = 0;
 let userScore = 0;
 
+document.addEventListener('DOMContentLoaded', function() {
+    gameContainer.classList.add('hide-questions');
+    startButton.addEventListener('click', startQuiz);
+})
 
-function showRules() {
-
-}
 /**
  * Sets currentQuestion and userScore to 0 and will then display the question. 
  */
 function startQuiz() {
+    gameContainer.classList.remove('hide-questions');
     currentQuestion = 0;
     userScore = 0;
     displayQuestion();
@@ -143,6 +147,5 @@ function addToScore() {
     userScore++;
 }
 
-document.addEventListener('DOMContentLoaded', startQuiz);
 nextButton.addEventListener('click', nextQuestion);
 checkAnswer();
