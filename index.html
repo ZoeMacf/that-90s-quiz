@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Quiz based on things from the 90s">
-    <meta name="keywords" content="90s, quiz, questions, music, tv, movie, pop culture">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quiz based on things from the 90s" />
+    <meta
+      name="keywords"
+      content="90s, quiz, questions, music, tv, movie, pop culture"
+    />
 
     <title>Document</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <h1>That 90s Quiz</h1>
 
-<!-- Container for the overall game area -->
+    <!-- Container for the overall game area -->
     <div class="game-container" id="game-content">
-        <!-- Start quiz section -->
-        <div class="quiz-intro" id="quiz-start">
-            <p>How well do you remember the 90's? <br> Get ready to find out!</p>
-            <button class="start-button" id="start-btn">Start Quiz</button>
-        </div>
-        <!-- Container for the questions and answers -->
-        <div class="question-container" id="question-container">
-            <div class="question-content" id="question-content">Question</div>
+      <!-- Start quiz section -->
+      <div class="quiz-intro" id="quiz-start">
+        <p>
+          How well do you remember the 90's? <br />
+          Get ready to find out!
+        </p>
+        <button class="start-button" id="start-btn">Start Quiz</button>
+      </div>
+      <!-- Container for the questions and answers -->
+      <div class="question-container" id="question-container">
+        <div class="question-content" id="question-content">Question</div>
 
-            <div class="answers" id="answer-container">
-            </div>
+        <div class="answers" id="answer-container"></div>
 
-            <button type="submit" class="next-btn" id="next">Next Question</button>
-        </div>
+        <button type="submit" class="next-btn" id="next">Next Question</button>
+      </div>
 
-        <div id="final-score">
-        </div>
+      <div id="final-score"></div>
     </div>
-    
+
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
