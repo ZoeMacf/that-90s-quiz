@@ -117,7 +117,7 @@ function nextQuestion() {
 function showFinalScore() {
   let finishButton = document.createElement("button");
   finishButton.innerText = "Finish Quiz";
-  finishButton.classList.add("finish-btn");
+  finishButton.classList.add("btn");
   questionContainer.append(finishButton);
 
   finishButton.addEventListener("click", function () {
@@ -133,6 +133,7 @@ function showFinalScore() {
     let restartQuizbtn = document.createElement('button');
     restartQuizbtn.innerHTML = 'Restart Quiz';
     finalScore.append(restartQuizbtn);
+    restartQuizbtn.classList.add("btn");
     restartQuizbtn.addEventListener('click', restartQuiz);
   });
 }
