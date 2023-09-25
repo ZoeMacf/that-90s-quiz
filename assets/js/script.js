@@ -42,15 +42,16 @@ let currentQuestion = 0;
 let userScore = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
-    gameContainer.classList.add('hide-questions');
+    questionContainer.classList.add('hide-questions');
     startButton.addEventListener('click', startQuiz);
+
 })
 
 /**
  * Sets currentQuestion and userScore to 0 and will then display the question. 
  */
 function startQuiz() {
-    gameContainer.classList.remove('hide-questions');
+    questionContainer.classList.remove('hide-questions');
     currentQuestion = 0;
     userScore = 0;
     displayQuestion();
