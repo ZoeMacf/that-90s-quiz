@@ -43,13 +43,16 @@ const startQuizContainer = document.getElementById("quiz-start");
 const gameContainer = document.getElementById("game-content");
 const questionContainer = document.getElementById("question-container");
 const questionContent = document.getElementById("question-content");
-const nextButton = document.getElementById("next");
 const startButton = document.getElementById("start-btn");
 const answerContainer = document.getElementById("answer-container");
 const finalScore = document.getElementById("final-score");
 
 let currentQuestion = 0;
 let userScore = 0;
+let nextButton = document.createElement("button");
+nextButton.classList.add("btn");
+nextButton.innerHTML = "Next Question";
+questionContainer.append(nextButton);
 
 document.addEventListener("DOMContentLoaded", function () {
   questionContainer.classList.add("hide");
@@ -62,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function startQuiz() {
   questionContainer.classList.remove("hide");
   startQuizContainer.classList.add("hide");
-
   currentQuestion = 0;
   userScore = 0;
   displayQuestion();
