@@ -86,7 +86,7 @@ h2 {
 }
 
 .finish-btn {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     height: 40px;
     width: 100x;

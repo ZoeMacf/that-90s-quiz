@@ -93,7 +93,11 @@ function nextQuestion() {
     }
 }  
 
-
+/**
+ * This function will create a button element with the content 'Finish Quiz', it will then wait for the user to click
+ * the finish button, once this has been done it will hide the questions and answers content and display
+ * the user's final score and display a button to restart quiz.
+ */
 function showFinalScore() {
         let finishButton = document.createElement('button');
         finishButton.innerText = 'Finish Quiz';
@@ -110,6 +114,10 @@ function showFinalScore() {
          finalScore.classList.add('show-final-score');
          finalScore.append(scoreHeading);
 
+         let restartQuiz = document.createElement('button');
+         restartQuiz.classList.add('finish-btn');
+         restartQuiz.innerText = 'Restart Quiz';
+         finalScore.append(restartQuiz);
         });
 }
 //Code used to check user button input was found here https://stackoverflow.com/questions/66193592/how-i-know-which-button-been-clicked-in-class-of-buttons
