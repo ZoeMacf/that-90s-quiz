@@ -17,6 +17,29 @@ h1 {
 h2 {
     font-family: 'Roboto', sans-serif;
 }
+.quiz-intro{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+
+}
+
+.start-button {
+display: inline-block;
+width: 50%;
+height: 30px;
+margin: auto;
+background-color: #fff;
+border: none;
+border-radius: 5px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+text-align: center;
+}
 
 .game-container {
     width: 50%;
