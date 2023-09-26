@@ -40,8 +40,8 @@ p {
   flex-wrap: wrap;
 }
 
-.quiz-rules > ul {
-  list-style:square;
+#modal-content li {
+  list-style-type: none;
   margin: 5px;
   line-height: 25px;
 }
@@ -147,7 +147,6 @@ p {
   font-weight: 700;
 }
 
-/* The Modal (background) */
 .rules-modal {
   display: none;
   position: fixed;
@@ -160,17 +159,15 @@ p {
   
 }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
   padding: 20px;
   border: none;
   border-radius: 5px;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 50%;
 }
 
-/* The Close Button */
 .close-btn {
   display: flex;
   font-size: 28px;
