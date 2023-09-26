@@ -26,8 +26,8 @@ h2 {
 }
 
 .game-container {
-  width: 50%;
-  height: 300px;
+  width: 75%;
+  height: 400px;
   padding: 10px;
   margin: auto;
   border: solid 3px #fff;
@@ -39,7 +39,6 @@ h2 {
 .question-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding: 5px;
   margin: 2px;
@@ -74,8 +73,25 @@ h2 {
   opacity: 0.6;
 }
 
+.quiz-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  border: solid 5px #fff;
+  border-radius: 50%;
+  background-color:rgba(171, 188, 202, 0.4);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #2d3047
+  
+}
+
 .btn {
-  display:block;
+  display:block;;
   height: 40px;
   width: 150px;
   margin: auto;

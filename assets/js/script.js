@@ -45,6 +45,7 @@ const questionContainer = document.getElementById("question-container");
 const questionContent = document.getElementById("question-content");
 const startButton = document.getElementById("start-btn");
 const answerContainer = document.getElementById("answer-container");
+const countdownContainer = document.getElementById("timer");
 const finalScore = document.getElementById("final-score");
 
 let currentQuestion = 0;
@@ -77,6 +78,7 @@ function startQuiz() {
  * and append to the answer-container div.
  */
 function displayQuestion() {
+  countdownTimer();
   let questionText = questionsArray[currentQuestion];
   questionContent.innerHTML = questionText.question;
   let answers = questionsArray[currentQuestion].answers;
@@ -96,6 +98,18 @@ function resetState() {
   }
   displayQuestion();
 }
+
+function countdownTimer() {
+  let timer = 16;
+  let countDown = setInterval(function () {
+    timer--
+    if(timer <= 0){
+      clearInterval(countDown);
+      disableButtons();
+    }
+    countdownContainer.innerHTML = `${timer}`;
+  }, 1000);
+  }
 
 /**This function will increment currentQuestion by 1 then check to see if it is less than the length
  * of questionArray, if this is the case it will display the next question then call resetState.
