@@ -17,6 +17,10 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 .rules-btn {
   display: flex;
   align-items: center;
@@ -27,6 +31,19 @@ h2 {
   border-radius: 50%;
   background-color: #fff;
   color: #2D3047;
+}
+
+.quiz-rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quiz-rules > ul {
+  list-style:square;
+  margin: 5px;
+  line-height: 25px;
 }
 
 .quiz-intro {
