@@ -47,6 +47,7 @@ const startButton = document.getElementById("start-btn");
 const answerContainer = document.getElementById("answer-container");
 const countdownContainer = document.getElementById("timer");
 const finalScore = document.getElementById("final-score");
+const rulesButton = document.getElementById('rules');
 
 let currentQuestion = 0;
 let userScore = 0;
@@ -78,6 +79,7 @@ function startQuiz() {
  * and append to the answer-container div.
  */
 function displayQuestion() {
+  rulesButton.classList.add('hide');
   countdownTimer();
   let questionText = questionsArray[currentQuestion];
   questionContent.innerHTML = questionText.question;
