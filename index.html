@@ -13,7 +13,10 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="https://kit.fontawesome.com/10c09555bb.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/10c09555bb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <h1>That 90s Quiz</h1>
@@ -21,22 +24,31 @@
     <!-- Container for the overall game area -->
     <div class="game-container" id="game-content">
       <!-- Start quiz section -->
-      <button class="rules-btn" id="rules"><i class="fa-solid fa-question fa-lg"></i></button>
+      <button class="rules-btn" id="rules-btn">
+        <i class="fa-solid fa-question fa-lg"></i>
+      </button>
       <div class="quiz-intro" id="quiz-start">
-        <p>
-          How well do you remember the 90's? <br />
-          Get ready to find out!
-        </p>
-      <div class="quiz-rules" id="rules-info">
-        <h2>How to play</h2>
-        <ul>
-          <li>You will have 15 seconds to answer each of the questions.</li>
-          <li>Once an answer has been chosen you will be unable to change.</li>
-          <li>Your score will then be shown at the end of the quiz.</li>
-        </ul>
-        <h2>Good luck!</h2>
+      <p>
+        How well do you remember the 90's? <br />
+        Get ready to find out!
+      </p>
+      <!-- The Modal -->
+      <div id="rules" class="rules-modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close-btn"><i class="fa-regular fa-circle-xmark"></i></span>
+          <h2>How to play</h2>
+          <ul>
+            <li>You will have 15 seconds to answer each of the questions.</li>
+            <li>
+              Once an answer has been chosen you will be unable to change.
+            </li>
+            <li>Your score will then be shown at the end of the quiz.</li>
+          </ul>
+          <h2>Good luck!</h2>
+        </div>
       </div>
-        <button class="btn" id="start-btn">Start Quiz</button>
+      <button class="btn" id="start-btn">Start Quiz</button>
       </div>
       <!-- Container for the questions and answers -->
       <div class="question-container" id="question-container">

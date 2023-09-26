@@ -47,7 +47,7 @@ const startButton = document.getElementById("start-btn");
 const answerContainer = document.getElementById("answer-container");
 const countdownContainer = document.getElementById("timer");
 const finalScore = document.getElementById("final-score");
-const rulesButton = document.getElementById('rules');
+const rulesButton = document.getElementById('rules-btn');
 
 let currentQuestion = 0;
 let userScore = 0;
@@ -59,7 +59,25 @@ questionContainer.append(nextButton);
 document.addEventListener("DOMContentLoaded", function () {
   questionContainer.classList.add("hide");
   startButton.addEventListener("click", startQuiz);
+  showRules();
 });
+
+function showRules() {
+  let rulesModal = document.getElementById('rules');
+  let closeButton = document.getElementsByClassName("close-btn")[0];
+  rulesButton.addEventListener('click', function() {
+    rulesModal.style.display = 'block';
+  });
+  closeButton.addEventListener('click', function(){
+    rulesModal.style.display = 'none';
+  });
+
+  window.addEventListener('click', function(event){
+    if(event.target == rulesModal) {
+      rulesModal.style.display = 'none';
+    }
+  });
+}
 
 /**
  * Sets currentQuestion and userScore to 0 and will then display the question.
