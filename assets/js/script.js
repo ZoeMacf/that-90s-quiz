@@ -51,6 +51,9 @@ const rulesButton = document.getElementById('rules-btn');
 
 let currentQuestion = 0;
 let userScore = 0;
+let timer;
+let countdown;
+let nextButtonClick;
 let nextButton = document.createElement("button");
 nextButton.classList.add("btn");
 nextButton.innerHTML = "Next Question";
@@ -88,8 +91,27 @@ function startQuiz() {
   currentQuestion = 0;
   userScore = 0;
   displayQuestion();
+  startTimer();
 }
 
+function startTimer(){
+  timer = 15;
+  countdownContainer.innerText = `${timer}`;
+  nextButtonClick;
+  nextButton.addEventListener('click', function (evt) {
+    nextButtonClick = evt.target;
+  });
+  countdown = setInterval(() => {
+    timer--;
+    countdownContainer.innerText = `${timer}`;
+    if(timer < 1){
+      disableButtons();
+      clearInterval(countdown);
+    } else if (nextButtonClick) {
+      clearInterval(countdown);
+    }
+  }, 2000);
+}
 /**
  * Sets the value questionText to be equal to questionsArray with the index set to currentQuestion value.
  * The questionContainer.innerHTML is set to equal the question at that index value.
@@ -98,7 +120,6 @@ function startQuiz() {
  */
 function displayQuestion() {
   rulesButton.classList.add('hide');
-  countdownTimer();
   let questionText = questionsArray[currentQuestion];
   questionContent.innerHTML = questionText.question;
   let answers = questionsArray[currentQuestion].answers;
@@ -119,18 +140,6 @@ function resetState() {
   displayQuestion();
 }
 
-function countdownTimer() {
-  let timer = 16;
-  let countDown = setInterval(function () {
-    timer--
-    if(timer <= 0){
-      clearInterval(countDown);
-      disableButtons();
-    }
-    countdownContainer.innerHTML = `${timer}`;
-  }, 1000);
-  }
-
 /**This function will increment currentQuestion by 1 then check to see if it is less than the length
  * of questionArray, if this is the case it will display the next question then call resetState.
  */
@@ -139,6 +148,8 @@ function nextQuestion() {
   if (currentQuestion < questionsArray.length) {
     displayQuestion();
     resetState();
+    clearInterval(countdown);
+    startTimer();
   } else {
     nextButton.classList.add("hide");
     showFinalScore();
