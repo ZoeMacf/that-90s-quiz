@@ -94,6 +94,11 @@ function startQuiz() {
   startTimer();
 }
 
+/**
+ * Sets the timer to 15 seconds and creates an event listener for the next button. A set interval function is set to 
+ * minus the value of timer by 1. Once the timer is less than 1 the buttons are disabled and the timer is cleared. If the next
+ * button is clicked the timer is cleared. 
+ */
 function startTimer(){
   timer = 15;
   countdownContainer.innerText = `${timer}`;
