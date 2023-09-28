@@ -65,6 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
   showRules();
 });
 
+/**
+ * Displays the modal when the user clicks on the rules button, modal will close if the user either clicks the close 
+ * button or clicks outside of the modal box.
+ */
 function showRules() {
   let rulesModal = document.getElementById('rules');
   let closeButton = document.getElementsByClassName("close-btn")[0];
@@ -83,7 +87,8 @@ function showRules() {
 }
 
 /**
- * Sets currentQuestion and userScore to 0 and will then display the question.
+ * Hides the question container and shows the start quiz container, then sets currentQuestion and userScore to 0 
+ * and will then display the question and timer.
  */
 function startQuiz() {
   questionContainer.classList.remove("hide");
@@ -209,6 +214,9 @@ function checkAnswer() {
   });
 }
 
+/**
+ * Obtains the answer buttons by their class name and for each button will give it a disabled property set to true.
+ */
 function disableButtons() {
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
@@ -216,6 +224,9 @@ function disableButtons() {
   }
 }
 
+/**
+ * When this function is called it will reload the page. 
+ */
 function restartQuiz() {
   location.reload();
 }
