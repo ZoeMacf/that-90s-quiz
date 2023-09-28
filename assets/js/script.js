@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
  * Displays the modal when the user clicks on the rules button, modal will close if the user either clicks the close 
  * button or clicks outside of the modal box.
  */
+
 function showRules() {
   let rulesModal = document.getElementById('rules');
   let closeButton = document.getElementsByClassName("close-btn")[0];
@@ -90,6 +91,7 @@ function showRules() {
  * Hides the question container and shows the start quiz container, then sets currentQuestion and userScore to 0 
  * and will then display the question and timer.
  */
+
 function startQuiz() {
   questionContainer.classList.remove("hide");
   startQuizContainer.classList.add("hide");
@@ -104,6 +106,7 @@ function startQuiz() {
  * minus the value of timer by 1. Once the timer is less than 1 the buttons are disabled and the timer is cleared. If the next
  * button is clicked the timer is cleared. 
  */
+
 function startTimer(){
   timer = 15;
   countdownContainer.innerText = `${timer}`;
@@ -122,12 +125,14 @@ function startTimer(){
     }
   }, 2000);
 }
+
 /**
  * Sets the value questionText to be equal to questionsArray with the index set to currentQuestion value.
  * The questionContainer.innerHTML is set to equal the question at that index value.
  * To get the answers the function will then iterate through the array of answers, create a button for each one
  * and append to the answer-container div.
  */
+
 function displayQuestion() {
   rulesButton.classList.add('hide');
   let questionText = questionsArray[currentQuestion];
@@ -140,9 +145,11 @@ function displayQuestion() {
     answerContainer.appendChild(button);
   });
 }
+
 /**This function will check to see if the answerContainer has a firstChild appended
  * if this is the case it will remove it and then run the displayQuestion function.
  */
+
 function resetState() {
   while (answerContainer.firstChild) {
     answerContainer.removeChild(answerContainer.firstChild);
@@ -153,6 +160,7 @@ function resetState() {
 /**This function will increment currentQuestion by 1 then check to see if it is less than the length
  * of questionArray, if this is the case it will display the next question then call resetState.
  */
+
 function nextQuestion() {
   currentQuestion++;
   if (currentQuestion < questionsArray.length) {
@@ -171,6 +179,7 @@ function nextQuestion() {
  * the finish button, once this has been done it will hide the questions and answers content and display
  * the user's final score and display a button to restart quiz.
  */
+
 function showFinalScore() {
   let finishButton = document.createElement("button");
   finishButton.innerText = "Finish Quiz";
@@ -194,11 +203,13 @@ function showFinalScore() {
     restartQuizbtn.addEventListener("click", restartQuiz);
   });
 }
+
 //Code used to check user button input was found here https://stackoverflow.com/questions/66193592/how-i-know-which-button-been-clicked-in-class-of-buttons
 /**
  * Function contains an event listener to check which of the answer buttons are clicked, if it is correct it will add to the score
  * and highlight the answer as being correct, if incorrect score is not affected and answer will be highlighted to show incorrect.
  */
+
 function checkAnswer() {
   answerContainer.addEventListener("click", function (evt) {
     let userInput = evt.target;
@@ -217,6 +228,7 @@ function checkAnswer() {
 /**
  * Obtains the answer buttons by their class name and for each button will give it a disabled property set to true.
  */
+
 function disableButtons() {
   let answerButtons = document.getElementsByClassName("answer-btn");
   for (let i = 0; i < answerButtons.length; i++) {
@@ -227,6 +239,7 @@ function disableButtons() {
 /**
  * When this function is called it will reload the page. 
  */
+
 function restartQuiz() {
   location.reload();
 }
