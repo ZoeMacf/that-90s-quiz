@@ -47,6 +47,8 @@ Users can test their knowledge of the 90's across many genres.
 
 #### Frequent Visitor Goals
 
+- I would like to be able to access and play the quiz across many devices with no performance or readability issues. 
+
 
 ## Design
 
