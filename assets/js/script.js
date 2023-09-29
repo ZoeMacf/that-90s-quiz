@@ -112,7 +112,7 @@ function showRules() {
   let rulesModal = document.getElementById("rules");
   let closeButton = document.getElementsByClassName("close-btn")[0];
   rulesButton.addEventListener("click", function () {
-    rulesModal.style.display = "block";
+    rulesModal.style.display = "flex";
   });
   closeButton.addEventListener("click", function () {
     rulesModal.style.display = "none";
