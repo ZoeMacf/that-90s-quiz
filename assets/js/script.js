@@ -37,6 +37,44 @@ let questionsArray = [
     answers: ["Age of Empires", "SimCity", "Myst", "Civilization"],
     correct: "Civilization",
   },
+
+  {
+    question:
+      "Who is the “Sesame Street” star who was tickled with laughter and became the Christmas 1996 must-have toy?",
+    answers: ["Big Bird", "Bert", "Oscar", "Elmo"],
+    correct: "Elmo",
+  },
+
+  {
+    question:
+      "In the television series “The Fresh Prince of Bel-Air,” what was the name of the family butler?",
+    answers: ["Jeeves", "Geoffrey", "George", "Richard"],
+    correct: "Geoffrey",
+  },
+
+  {
+    question: "Who made rockers sad with the somber song 'Creep'?",
+    answers: [
+      "Nirvana",
+      "The Smashing Pumpkins",
+      "Alice in Chains",
+      "Radiohead",
+    ],
+    correct: "Radiohead",
+  },
+
+  {
+    question:
+      "What was the name of the haircut inspired by the popular 1990s TV show Friends?",
+    answers: ["The Bing", "The How You Doin?", "The Rachel", "The Janice"],
+    correct: "The Rachel",
+  },
+
+  {
+    question: "When did the Google search engine launch?",
+    answers: ["1997", "1994", "1998", "1999"],
+    correct: "1998",
+  },
 ];
 
 const startQuizContainer = document.getElementById("quiz-start");
@@ -47,7 +85,7 @@ const startButton = document.getElementById("start-btn");
 const answerContainer = document.getElementById("answer-container");
 const countdownContainer = document.getElementById("timer");
 const finalScore = document.getElementById("final-score");
-const rulesButton = document.getElementById('rules-btn');
+const rulesButton = document.getElementById("rules-btn");
 
 let currentQuestion = 0;
 let userScore = 0;
@@ -66,29 +104,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /**
- * Displays the modal when the user clicks on the rules button, modal will close if the user either clicks the close 
+ * Displays the modal when the user clicks on the rules button, modal will close if the user either clicks the close
  * button or clicks outside of the modal box.
  */
 
 function showRules() {
-  let rulesModal = document.getElementById('rules');
+  let rulesModal = document.getElementById("rules");
   let closeButton = document.getElementsByClassName("close-btn")[0];
-  rulesButton.addEventListener('click', function() {
-    rulesModal.style.display = 'block';
+  rulesButton.addEventListener("click", function () {
+    rulesModal.style.display = "block";
   });
-  closeButton.addEventListener('click', function(){
-    rulesModal.style.display = 'none';
+  closeButton.addEventListener("click", function () {
+    rulesModal.style.display = "none";
   });
 
-  window.addEventListener('click', function(event){
-    if(event.target == rulesModal) {
-      rulesModal.style.display = 'none';
+  window.addEventListener("click", function (event) {
+    if (event.target == rulesModal) {
+      rulesModal.style.display = "none";
     }
   });
 }
 
 /**
- * Hides the question container and shows the start quiz container, then sets currentQuestion and userScore to 0 
+ * Hides the question container and shows the start quiz container, then sets currentQuestion and userScore to 0
  * and will then display the question and timer.
  */
 
@@ -102,22 +140,22 @@ function startQuiz() {
 }
 
 /**
- * Sets the timer to 15 seconds and creates an event listener for the next button. A set interval function is set to 
+ * Sets the timer to 15 seconds and creates an event listener for the next button. A set interval function is set to
  * minus the value of timer by 1. Once the timer is less than 1 the buttons are disabled and the timer is cleared. If the next
- * button is clicked the timer is cleared. 
+ * button is clicked the timer is cleared.
  */
 
-function startTimer(){
+function startTimer() {
   timer = 15;
   countdownContainer.innerText = `${timer}`;
   nextButtonClick;
-  nextButton.addEventListener('click', function (evt) {
+  nextButton.addEventListener("click", function (evt) {
     nextButtonClick = evt.target;
   });
   countdown = setInterval(() => {
     timer--;
     countdownContainer.innerText = `${timer}`;
-    if(timer < 1){
+    if (timer < 1) {
       disableButtons();
       clearInterval(countdown);
     } else if (nextButtonClick) {
@@ -134,7 +172,7 @@ function startTimer(){
  */
 
 function displayQuestion() {
-  rulesButton.classList.add('hide');
+  rulesButton.classList.add("hide");
   let questionText = questionsArray[currentQuestion];
   questionContent.innerHTML = questionText.question;
   let answers = questionsArray[currentQuestion].answers;
@@ -237,7 +275,7 @@ function disableButtons() {
 }
 
 /**
- * When this function is called it will reload the page. 
+ * When this function is called it will reload the page.
  */
 
 function restartQuiz() {
