@@ -54,6 +54,12 @@ Users can test their knowledge of the 90's across many genres.
 
 ### Typography
 
+For the main heading of this quiz the font family 'Shrikhand' was chosen, this font fit the theme of my quiz perfectly and helps make the heading pop.
+
+![Heading-font](./README-images/shrikhand-font.PNG)
+
+For the remainder of the site, the font family 'Roboto' was chosen, for its readability and it goes well with the font family chosen for the quiz heading. As well as this, it suits the overall design of the quiz. 
+
 ### Imagery
 
 ### That 90's Quiz Color Scheme 
