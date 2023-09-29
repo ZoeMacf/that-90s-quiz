@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap");
 
 body {
-  background-color: #2d3047;
+  background-color: #0c0f0a;
 }
 
 /* Text-shadow was used to create a border around text source for values was https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
@@ -53,17 +53,19 @@ p {
   justify-content: space-around;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  color: #EEE5E9;
   font-weight: 700;
 }
 
 .game-container {
-  width: 75%;
+  width: 50%;
   height: 400px;
   padding: 10px;
   margin: auto;
-  border: solid 3px #fff;
-  background-color: #93b7be;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid 2px #E75A7C;
+  box-shadow: 0 4px 8px 0 rgba(231, 90, 124, 0.2), 0 6px 20px 0 rgba(231, 90, 124, 0.19), 
+  inset 0 6px 20px 0 rgba(231, 90, 124, 0.19), 0 4px 8px 0 rgba(231, 90, 124, 0.2);
   border-radius: 10px;
 }
 
@@ -74,6 +76,7 @@ p {
   padding: 5px;
   margin: 2px;
   font-family: "Roboto", sans-serif;
+  color: #EEE5E9;
   font-weight: 600;
 }
 
@@ -81,9 +84,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   height: 40px;
-  width: 240px;
-  margin: 10px;
-  background-color: #fff;
+  width: 320px;
+  margin: 20px;
+  background-color:#e75a7c;
   border: none;
   padding: 12px 28px;
   text-align: center;
@@ -91,7 +94,12 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Roboto", sans-serif;
+  color: #EEE5E9;
   font-weight: 700;
+}
+
+.answer-btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(231, 90, 124, 0.2), 0 6px 20px 0 rgba(231, 90, 124, 0.19);
 }
 
 .correct-answer {
@@ -111,22 +119,23 @@ p {
   margin-left: auto;
   width: 50px;
   height: 50px;
-  border: solid 5px #fff;
+  border: solid 5px #e75a7c;
   border-radius: 50%;
-  background-color:rgba(171, 188, 202, 0.4);
+  background-color:rgba(12, 15, 10, 0.4);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  color: #2d3047
+  color: #EEE5E9;
   
 }
 
 .btn {
-  display:block;;
+  display:flex;
+  justify-content: center;
   height: 40px;
   width: 150px;
   margin: auto;
-  background-color: #fff;
+  background-color: #e75a7c;
   border: none;
   padding: 12px 28px;
   text-align: center;
@@ -135,7 +144,12 @@ p {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Roboto", sans-serif;
+  color: #EEE5E9;
   font-weight: 700;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(231, 90, 124, 0.2), 0 6px 20px 0 rgba(231, 90, 124, 0.19);
 }
 
 .hide {
@@ -145,6 +159,7 @@ p {
 .show-final-score {
   text-align: center;
   font-family: "Roboto", sans-serif;
+  color: #EEE5E9;
   font-weight: 700;
 }
 
