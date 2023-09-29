@@ -58,9 +58,9 @@ For the main heading of this quiz the font family 'Shrikhand' was chosen, this f
 
 ![Heading-font](./README-images/shrikhand-font.PNG)
 
-For the remainder of the site, the font family 'Roboto' was chosen, for its readability and it goes well with the font family chosen for the quiz heading. As well as this, it suits the overall design of the quiz. 
+For the remainder of the site, the font family 'Roboto' was chosen, for its readability and it goes well with the font family chosen for the quiz heading. As well as this, it suits the overall design of the quiz.
 
-### Imagery
+![Main-font](./README-images/roboto-font.PNG)
 
 ### That 90's Quiz Color Scheme 
 
