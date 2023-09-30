@@ -95,6 +95,7 @@ let nextButtonClick;
 let nextButton = document.createElement("button");
 nextButton.classList.add("btn");
 nextButton.innerHTML = "Next Question";
+nextButton.addEventListener("click", nextQuestion);
 questionContainer.append(nextButton);
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -263,6 +264,8 @@ function checkAnswer() {
   });
 }
 
+checkAnswer();
+
 /**
  * Obtains the answer buttons by their class name and for each button will give it a disabled property set to true.
  */
@@ -281,6 +284,3 @@ function disableButtons() {
 function restartQuiz() {
   location.reload();
 }
-
-nextButton.addEventListener("click", nextQuestion);
-checkAnswer();
