@@ -163,8 +163,8 @@ p {
   font-size: 14px;
 }
 
-/* Separate class was made for next button as questions/answers push it down on smaller screen sizes */
-.next-btn {
+/* Separate class was made for next/finish button as questions/answers push it down on smaller screen sizes */
+.next-finish-btn {
   display: flex;
   justify-content: center;
   height: 40px;
@@ -295,6 +295,10 @@ p.error-page {
 /* Media Queries */
 
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+  }
+
   .game-container {
     width: 85%;
   }
@@ -340,6 +344,64 @@ p.error-page {
     text-align: center;
     font-size: 16px;
   }
+}
+
+@media screen and (max-width: 384px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 3rem;
+    margin-top: 25%;
+  }
+
+  .game-container {
+    width: 85%;
+    font-size: 1.1rem;
+  }
+
+  .quiz-timer {
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+  }
+
+  .question-content {
+    display: flex;
+    height: 10px;
+    margin: 5px;
+    font-size: 14px;
+    padding: none;
+  }
+
+  .question-container {
+    padding: 5px;
+    margin: 2px;
+  }
+
+  .answer-container {
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .answer-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 40px;
+    width: 240px;
+    margin: 14px;
+    padding: 12px 18px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .next-finish-btn {
+    margin: -50px auto;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -394,7 +456,7 @@ p.error-page {
     font-size: 16px;
   }
 
-  .next-btn {
+  .next-finish-btn {
     margin: -50px auto;
   }
 }

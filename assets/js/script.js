@@ -94,7 +94,7 @@ let timer;
 let countdown;
 let nextButtonClick;
 let nextButton = document.createElement("button");
-nextButton.classList.add("next-btn");
+nextButton.classList.add("next-finish-btn");
 nextButton.innerHTML = "Next Question";
 nextButton.addEventListener("click", nextQuestion);
 questionContainer.append(nextButton);
@@ -227,7 +227,7 @@ function nextQuestion() {
 function showFinalScore() {
   let finishButton = document.createElement("button");
   finishButton.innerText = "Finish Quiz";
-  finishButton.classList.add("btn");
+  finishButton.classList.add("next-finish-btn");
   questionContainer.append(finishButton);
 
   finishButton.addEventListener("click", function () {
