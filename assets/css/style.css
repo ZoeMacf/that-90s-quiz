@@ -7,7 +7,7 @@ body {
 /* Text-shadow was used to create a border around text source for values was https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
 h1 {
   font-family: "Shrikhand", cursive;
-  color: #E75A7C;
+  color: #e75a7c;
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
     -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
   font-size: 50px;
@@ -28,10 +28,10 @@ p {
   justify-content: center;
   width: 30px;
   height: 30px;
-  border: solid 2px #2D3047;
+  border: solid 2px #2d3047;
   border-radius: 50%;
   background-color: #fff;
-  color: #2D3047;
+  color: #2d3047;
 }
 
 .quiz-rules {
@@ -54,7 +54,7 @@ p {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 32px;
-  color: #EEE5E9;
+  color: #eee5e9;
   font-weight: 700;
 }
 
@@ -63,9 +63,11 @@ p {
   height: 400px;
   padding: 10px;
   margin: auto;
-  border: solid 2px #E75A7C;
-  box-shadow: 0 4px 8px 0 rgba(231, 90, 124, 0.2), 0 6px 20px 0 rgba(231, 90, 124, 0.19), 
-  inset 0 6px 20px 0 rgba(231, 90, 124, 0.19), 0 4px 8px 0 rgba(231, 90, 124, 0.2);
+  border: solid 2px #e75a7c;
+  box-shadow: 0 4px 8px 0 rgba(231, 90, 124, 0.2),
+    0 6px 20px 0 rgba(231, 90, 124, 0.19),
+    inset 0 6px 20px 0 rgba(231, 90, 124, 0.19),
+    0 4px 8px 0 rgba(231, 90, 124, 0.2);
   border-radius: 10px;
 }
 
@@ -76,8 +78,13 @@ p {
   padding: 5px;
   margin: 2px;
   font-family: "Roboto", sans-serif;
-  color: #EEE5E9;
+  color: #eee5e9;
   font-weight: 600;
+}
+
+.answers {
+  margin: auto;
+  padding: 10px;
 }
 
 .answer-btn {
@@ -86,7 +93,7 @@ p {
   height: 40px;
   width: 320px;
   margin: 20px;
-  background-color:#e75a7c;
+  background-color: #e75a7c;
   border: none;
   padding: 12px 28px;
   text-align: center;
@@ -94,12 +101,13 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Roboto", sans-serif;
-  color: #EEE5E9;
+  color: #eee5e9;
   font-weight: 700;
 }
 
 .answer-btn:hover {
-  box-shadow: 0 4px 8px 0 rgba(231, 90, 124, 0.2), 0 6px 20px 0 rgba(231, 90, 124, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(231, 90, 124, 0.2),
+    0 6px 20px 0 rgba(231, 90, 124, 0.19);
 }
 
 .correct-answer {
@@ -121,16 +129,15 @@ p {
   height: 50px;
   border: solid 5px #e75a7c;
   border-radius: 50%;
-  background-color:rgba(12, 15, 10, 0.4);
+  background-color: rgba(12, 15, 10, 0.4);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  color: #EEE5E9;
-  
+  color: #eee5e9;
 }
 
 .btn {
-  display:flex;
+  display: flex;
   justify-content: center;
   height: 40px;
   width: 150px;
@@ -144,13 +151,14 @@ p {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Roboto", sans-serif;
-  color: #EEE5E9;
+  color: #eee5e9;
   font-weight: 700;
   font-size: 14px;
 }
 
 .btn:hover {
-  box-shadow: 0 4px 8px 0 rgba(231, 90, 124, 0.2), 0 6px 20px 0 rgba(231, 90, 124, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(231, 90, 124, 0.2),
+    0 6px 20px 0 rgba(231, 90, 124, 0.19);
 }
 
 .hide {
@@ -160,7 +168,7 @@ p {
 .show-final-score {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  color: #EEE5E9;
+  color: #eee5e9;
   font-weight: 700;
 }
 
@@ -173,12 +181,11 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow:auto;
-  
+  overflow: auto;
 }
 
 .modal-content {
-  background-color: #EEE5E9;
+  background-color: #eee5e9;
   margin: 15% auto;
   padding: 20px;
   border: none;
@@ -199,4 +206,65 @@ p {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+h1.error-page {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
+  width: 25%;
+  font-family: "Roboto", sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  color: #fff;
+  animation: flicker 1.5s infinite alternate;
+  border: 0.2rem solid #fff;
+  box-shadow:  0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #e60073,
+  0 0 0.8rem #e60073,
+  0 0 2.8rem #e60073,
+  inset 0 0 1.3rem #e60073;
+  border-radius: 0.2rem;
+  padding: 10px;
+
+}
+
+hr {
+  display: none;
+}
+
+p.error-page {
+  display: flex;
+  margin: 30px auto;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  color: #fff;
+}
+
+/* Flickering animation https://css-tricks.com/how-to-create-neon-text-with-css/ */
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #e60073,
+      0 0 80px #e60073, 0 0 90px #e60073, 0 0 100px #e60073, 0 0 150px #e60073;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
