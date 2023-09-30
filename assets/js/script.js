@@ -94,7 +94,7 @@ let timer;
 let countdown;
 let nextButtonClick;
 let nextButton = document.createElement("button");
-nextButton.classList.add("btn");
+nextButton.classList.add("next-btn");
 nextButton.innerHTML = "Next Question";
 nextButton.addEventListener("click", nextQuestion);
 questionContainer.append(nextButton);
