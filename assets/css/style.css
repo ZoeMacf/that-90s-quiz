@@ -60,7 +60,7 @@ p {
 
 .game-container {
   width: 50%;
-  height: 400px;
+  height: 420px;
   padding: 10px;
   margin: auto;
   border: solid 2px #e75a7c;
@@ -80,6 +80,13 @@ p {
   font-family: "Roboto", sans-serif;
   color: #eee5e9;
   font-weight: 600;
+}
+
+.question-content {
+  display: flex;
+  height: 10px;
+  margin: 5px;
+  padding: none;
 }
 
 .answers {
