@@ -438,9 +438,8 @@ p.error-page {
     margin: 2px;
   }
 
-  .answer-container {
-    margin: auto;
-    margin-top: 50px;
+  .answers{
+    margin: 50px auto;
   }
 
   .answer-btn {
