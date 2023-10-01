@@ -240,7 +240,7 @@ h1.error-page {
   display: flex;
   justify-content: center;
   margin: 5rem auto;
-  width: 25%;
+  width: 13%;
   font-family: "Roboto", sans-serif;
   font-size: 120px;
   font-weight: 700;
@@ -290,6 +290,34 @@ p.error-page {
   55% {
     text-shadow: none;
   }
+}
+
+.coin {
+  color: #e60073;
+  padding: 5px;
+  font-size: 40px;
+}
+
+a {
+  display: flex;
+  padding: 5px;
+  margin: 30px auto;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  color: #fff;
+}
+
+a:link {
+  text-decoration: none;
+  color: #fff
+}
+
+a:visited {
+  color: #fff
 }
 
 /* Media Queries */
