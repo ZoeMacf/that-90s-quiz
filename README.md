@@ -68,6 +68,10 @@ For the remainder of the site, the font family 'Roboto' was chosen, for its read
 
 ### That 90's Quiz Color Scheme 
 
+![Colour-Scheme](./assets/images/colours.PNG)
+
+Initially this site had a colour scheme of neutral blues and a simple design, however towards the end of building the site I decided to choose the above colours to help create the neon sign feel of the 90's.
+
 
 ### Wireframes
 
