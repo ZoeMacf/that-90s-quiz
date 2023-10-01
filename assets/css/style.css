@@ -313,11 +313,11 @@ a {
 
 a:link {
   text-decoration: none;
-  color: #fff
+  color: #fff;
 }
 
 a:visited {
-  color: #fff
+  color: #fff;
 }
 
 /* Media Queries */
@@ -356,9 +356,8 @@ a:visited {
     margin: 2px;
   }
 
-  .answer-container {
-    margin: auto;
-    margin-top: 70px;
+  .answers {
+    margin: 45px auto;
   }
 
   .answer-btn {
@@ -371,6 +370,10 @@ a:visited {
     padding: 12px 18px;
     text-align: center;
     font-size: 16px;
+  }
+
+  .next-finish-btn {
+    margin: -2.5rem auto;
   }
 }
 
@@ -409,7 +412,7 @@ a:visited {
     margin: 2px;
   }
 
-  .answers{
+  .answers {
     margin: 50px auto;
   }
 
@@ -428,7 +431,6 @@ a:visited {
   .next-finish-btn {
     margin: -50px auto;
   }
-
 }
 
 @media screen and (max-width: 375px) {
@@ -466,7 +468,7 @@ a:visited {
     margin: 2px;
   }
 
-  .answers{
+  .answers {
     margin: 50px auto;
   }
 
