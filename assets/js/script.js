@@ -33,9 +33,9 @@ let questionsArray = [
 
   {
     question:
-      "Which 1990s computer game challenged players to lead a tribe of people through various historical eras by researching technologies, expanding territories, and engaging in diplomacy and warfare?",
-    answers: ["Age of Empires", "SimCity", "Myst", "Civilization"],
-    correct: "Civilization",
+      "Which country hosted the 1994 World Cup Finals?",
+    answers: ["France", "Turkey", "Australia", "USA"],
+    correct: "USA",
   },
 
   {
