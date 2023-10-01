@@ -1,4 +1,8 @@
-# That 90s Quiz
+# That 90's Quiz
+
+That 90's Quiz is a quiz to test the user's 90's trivia, they will be able to see their score at the end and restart to try and score even higher. 
+
+The live site can be viewed here [The 90's Quiz](https://zoemacf.github.io/that-90s-quiz/) .
 
 ## Contents
 
