@@ -537,7 +537,7 @@ a:visited {
   }
 
   .quiz-intro {
-    margin: -55px auto;
+    margin: 25px auto;
   }
 
   .quiz-timer {
@@ -563,11 +563,11 @@ a:visited {
   }
 
   .answer-btn {
+    justify-content: center;
     height: 30px;
     width: 240px;
     margin: 30px auto;
     padding: 10px 18px;
-    text-align: center;
     font-size: 0.6rem;
   }
 
