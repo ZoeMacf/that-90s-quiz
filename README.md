@@ -47,7 +47,7 @@ Users can test their knowledge of the 90's across many genres.
 - I want to be able to view both the current score and a timer.
 #### Returning Visitor Goals
 
-- I would like to be able to view my previous score.
+- I would like to be able to see the correct answer if I choose wrong.
 
 #### Frequent Visitor Goals
 
