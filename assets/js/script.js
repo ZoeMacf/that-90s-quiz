@@ -40,7 +40,6 @@ let questionsArray = [{
 	correct: "1998",
 }, ];
 const startQuizContainer = document.getElementById("quiz-start");
-const gameContainer = document.getElementById("game-content");
 const questionContainer = document.getElementById("question-container");
 const questionContent = document.getElementById("question-content");
 const answerContainer = document.getElementById("answer-container");
@@ -106,7 +105,6 @@ function startQuiz() {
 function startTimer() {
 	timer = 10;
 	countdownContainer.innerText = `${timer}`;
-	nextButtonClick;
 	nextButton.addEventListener("click", function(evt) {
 		nextButtonClick = evt.target;
 	});
