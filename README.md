@@ -56,6 +56,8 @@ Users can test their knowledge of the 90's across many genres.
 
 ## Design
 
+This site has gone through three designs initially a simple blue themed design which was changed out for a black and pink neon approach however due to low contrast scores this was changed a final time to a theme similar to a Nintendo GameBoy to stick with the 90's theme. Images of all three designs will be included below. 
+
 ### Typography
 
 For the main heading of this quiz the font family 'Shrikhand' was chosen, this font fit the theme of my quiz perfectly and helps make the heading pop.
@@ -68,9 +70,9 @@ For the remainder of the site, the font family 'Roboto' was chosen, for its read
 
 ### That 90's Quiz Color Scheme 
 
-![Colour-Scheme](./assets/images/colours.PNG)
+![Colour-Scheme](./README-images/colours.PNG)
 
-Initially this site had a colour scheme of neutral blues and a simple design, however towards the end of building the site I decided to choose the above colours to help create the neon sign feel of the 90's.
+The colour scheme chosen uses the various green tones found on the original GameBoy screen, along with the grey to represent the device itself.
 
 
 ### Wireframes
@@ -98,20 +100,31 @@ Initially this site had a colour scheme of neutral blues and a simple design, ho
 
 ![Final-Score-Screen](./README-images/original-results-screen.PNG)
 
-## Final Design
+## Neon Design
 
 #### Start Screen
 
-![Start-Screen](./README-images/final-start-screen.PNG)
+![Start-Screen](./README-images/neon-start-screen.PNG)
 
 #### Questions Screen
 
-![Questions-Screen](./README-images/final-questions-screen.PNG)
+![Questions-Screen](./README-images/neon-questions-screen.PNG)
 
 #### Final Score Screen
 
-![Final-Score-Screen](./README-images/final-results-screen.PNG)
+![Final-Score-Screen](./README-images/neon-results-screen.PNG)
+## GameBoy Design
+#### Start Screen
 
+![Start-Screen](./README-images/finished-start-screen.PNG)
+
+#### Questions Screen
+
+![Questions-Screen](./README-images/finished-questions-screen.PNG)
+
+#### Final Score Screen
+
+![Final-Score-Screen](./README-images/finished-score-screen.PNG)
 #### Mobile View
 
 ### Features
