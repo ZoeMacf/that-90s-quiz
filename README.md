@@ -298,6 +298,17 @@ Unfortunately I have been unable to fix this issue, but believe that by changing
 
 ## Credits
 
+* [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8) video on YouTube was a great help understanding how the manipulating DOM elements with Javascript works and helped me figure out how to get started with my answer buttons.
 
+* [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) was essential in understanding how to structure a modal along with looking up various CSS syntax and tricks.
+
+* The pixel border effect on the buttons was created after reviewing a post on [StackOverflow](https://stackoverflow.com/questions/61771309/pixel-art-style-border-on-tumblr-theme)
+
+* Function for checking which answer was selected by the user was created thanks a post on [StackOverflow](https://stackoverflow.com/questions/66193592/how-i-know-which-button-been-clicked-in-class-of-buttons)
 
 ### Acknowledgements
+
+- I would like to thank my mentor Luke for all of his support throughout this project especially after I changed my original idea and had to start over. 
+- Thank you to Code Institute tutors Holly, Joanne and Jason for their amazing support throughout my numerous contacts during this project. 
+- A big thank you to my fellow colleague's for help throughout the project as well. 
+- Finally I would also like to thank my facilitator Laura for her amazing support throughout this project alongside our Student Support service for allowing me to receive an extension to ensure I could create something I would be proud of.
