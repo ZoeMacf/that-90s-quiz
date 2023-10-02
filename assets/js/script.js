@@ -151,7 +151,7 @@ function startQuiz() {
  */
 
 function startTimer() {
-  timer = 15;
+  timer = 10;
   countdownContainer.innerText = `${timer}`;
   nextButtonClick;
   nextButton.addEventListener("click", function (evt) {
