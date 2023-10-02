@@ -60,13 +60,13 @@ This site has gone through three designs initially a simple blue themed design w
 
 ### Typography
 
-For the main heading of this quiz the font family 'Shrikhand' was chosen, this font fit the theme of my quiz perfectly and helps make the heading pop.
+For the main heading of this quiz the font family 'Oswald' was chosen, this font is quite similar to the font that was used on a GameBoy and as well as this, the simplistic look to it helped bring the elements together.
 
-![Heading-font](./README-images/shrikhand-font.PNG)
+![Heading-font](./README-images/oswald.PNG)
 
-For the remainder of the site, the font family 'Roboto' was chosen, for its readability and it goes well with the font family chosen for the quiz heading. As well as this, it suits the overall design of the quiz.
+For the remainder of the site, the font family 'Press Start 2P' was chosen to help give the quiz the retro pixelated look of a classic GameBoy.
 
-![Main-font](./README-images/roboto-font.PNG)
+![Main-font](./README-images/press-start-2p.PNG)
 
 ### That 90's Quiz Color Scheme 
 
