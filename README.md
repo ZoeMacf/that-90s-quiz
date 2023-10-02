@@ -148,9 +148,17 @@ A timer was added to the quiz to give the user a time limit to answer the questi
 
 In future I would like to have the questions and answers to shuffle on each restart. I would also like to allow the user to save their score and be able to access a high score section of the quiz. 
 
-Allow the user to share their highscore on various social media accounts. 
+Allow the user to share their high score on various social media accounts. 
 ## Accessibility
 
+To ensure that this quiz was accessible to all users the following was done:
+
+* Ensure that non-contrasting colours were used in the final design, this was initially not the case with one of the designs and thus a redesign was needed.
+* An aria-label was added to the rules button.
+
+And finally WAVE (Web accessibility evaluation tool) was used to ensure that the site was accessible to all users and followed semantic standards. 
+
+![WAVE-test](./README-images/wave-test.PNG)
 
 
 ## Technologies Used
@@ -204,6 +212,28 @@ In order to clone the repository for local development you will need to follow t
 4. Access the terminal in your code editor, create a new directory that you would like to use for the clone. 
 5. Then type 'git clone' into your code editor's terminal, paste the link from step 3 and hit enter. 
 ## Testing
+
+### W3C Validator
+
+[W3C](https://validator.w3.org/nu/) was used in order to test the HTML for both the index page and 404 error page. 
+
+![HTML validation](./README-images/w3-validator.PNG)
+
+The HTML validation process used on this website passed. 
+
+### Jigsaw CSS Validator
+
+In order to ensure that the CSS used throughout this site was correctly written, [Jigsaw](https://jigsaw.w3.org/css-validator/) was used as a validation tool. 
+
+![CSS Validation](./README-images/CSS-test.PNG)
+
+The CSS validation process used on this website passed. 
+
+### Lighthouse 
+
+Chrome's lighthouse developer tool was used to check the performance of the quiz after the moving of the Font Awesome script and fixing the contrasting colours of the previous design the site passed perfectly.
+
+![Lighthouse-test](./README-images/lighthouse-testing.PNG)
 
 
 ### Further Testing
