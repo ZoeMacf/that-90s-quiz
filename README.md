@@ -268,6 +268,33 @@ There were no major issues across Google Chrome, Firefox or Safari, however on S
 
 ### Bugs Found
 
+The following bugs were found throughout the development and general use of the site. 
+
+#### Bug 1
+
+When using the quiz the timer would countdown from the initial value of 15 but would stop when it reached 1 and disable the buttons. 
+
+![Bug-1](./README-images/Bug-1.PNG)
+
+In order to fix this, I declared the timer value outside of the countdown function, gave it a value within the function. 
+
+As well as this, setting the timer innerHTML to timer was causing a delay in displaying the time which factored in to the timer stopping at 1. This was fixed by setting the innterHTML before the countdown and inside it. 
+
+#### Bug 2
+
+The paragraph elements used to hold the questions was pushing down the answer and next question buttons whenever there was a particularly long question. 
+
+![Bug-2](./README-images/Bug-2.PNG)
+
+This was fixed by setting a padding of 0 to the p element. 
+
+#### Bug 3
+
+If the user clicks outside of the buttons but within the answer container the entire div is coloured red as the code is listening for the users targeted event and checks if it is equal to the current value. As there is none the whole div becomes red.
+
+![Bug-3](./README-images/Bug-3.PNG)
+
+Unfortunately I have been unable to fix this issue, but believe that by changing how the checkAnswer function works this would be possible. 
 
 ## Credits
 
