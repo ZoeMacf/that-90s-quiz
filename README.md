@@ -129,6 +129,20 @@ The colour scheme chosen uses the various green tones found on the original Game
 
 ### Features
 
+#### Rules
+
+The rules for the quiz can be accessed through a rules button located in top left of the game's container div. 
+
+![Rules-Button](./README-images/rules-button.PNG)
+
+
+![Modal-Open](./README-images/modal-open.PNG)
+
+#### Timer
+
+A timer was added to the quiz to give the user a time limit to answer the questions. If an answer is not choesen within this timeframe the buttons become disabled and the user has to skip the question.
+
+![Timer](./README-images/timer.PNG)
 
 ### Future Implementations
  
