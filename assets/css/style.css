@@ -70,8 +70,7 @@ p {
   padding: 10px;
   margin: auto;
   background-color: #9bbc0f;
-  border: solid 10px #272929;
-  border-radius: 10px;
+  border: solid 15px #272929;
 }
 
 .question-container {
