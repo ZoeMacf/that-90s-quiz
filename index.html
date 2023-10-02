@@ -2,26 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Quiz based on things from the 90s" />
-    <meta
-      name="keywords"
-      content="90s, quiz, questions, music, tv, movie, pop culture"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Quiz based on things from the 90s"/>
+    <meta name="keywords" content="90s, quiz, questions, music, tv, movie, pop culture"/>
 
     <title>The 90's Quiz</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/10c09555bb.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="https://kit.fontawesome.com/10c09555bb.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-    <h1>That 90's Quiz</h1>
-  </header>
+      <h1>That 90's Quiz</h1>
+    </header>
     <!-- Container for the overall game area -->
     <div class="game-container" id="game-content">
       <!-- Start quiz section -->
@@ -29,26 +23,28 @@
         <i class="fa-solid fa-question fa-lg"></i>
       </button>
       <div class="quiz-intro" id="quiz-start">
-      <p>
-        How well do you remember the 90's? <br />
-        Get ready to find out!
-      </p>
-      <!-- The Modal -->
-      <div id="rules" class="rules-modal">
-        <!-- Modal content -->
-        <div class="modal-content" id="modal-content">
-          <span class="close-btn"><i class="fa-regular fa-circle-xmark"></i></span>
-          <h2>How to play</h2>
-          <ul class="rules-info">
-            <li>You will have 15 seconds to answer each of the questions.</li>
-            <li>
-              Once an answer has been chosen you will be unable to change.
-            </li>
-            <li>Your score will then be shown at the end of the quiz.</li>
-          </ul>
-          <h2>Good luck!</h2>
+        <p>
+          How well do you remember the 90's? <br/>
+          Get ready to find out!
+        </p>
+        <!-- The Modal -->
+        <div id="rules" class="rules-modal">
+          <!-- Modal content -->
+          <div class="modal-content" id="modal-content">
+            <span class="close-btn"
+              ><i class="fa-regular fa-circle-xmark"></i
+            ></span>
+            <h2>How to play</h2>
+            <ul class="rules-info">
+              <li>You will have 15 seconds to answer each of the questions.</li>
+              <li>
+                Once an answer has been chosen you will be unable to change.
+              </li>
+              <li>Your score will then be shown at the end of the quiz.</li>
+            </ul>
+            <h2>Good luck!</h2>
+          </div>
         </div>
-      </div>
       </div>
       <!-- Container for the questions and answers -->
       <div class="question-container" id="question-container">
@@ -58,13 +54,13 @@
         <!-- Answer buttons will be created and populated through Javascript -->
         <div class="answers" id="answer-container"></div>
       </div>
-<!-- Container for final score, elements will be added through Javascript -->
+      <!-- Container for final score, elements will be added through Javascript -->
       <div id="final-score"></div>
     </div>
 
     <script src="assets/js/script.js"></script>
-  </body>
-  <footer>
+    <footer>
     
-  </footer>
+    </footer>
+  </body>
 </html>
