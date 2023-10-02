@@ -143,7 +143,10 @@ The colour scheme chosen uses the various green tones found on the original Game
 The entirety of the site was coded using Visual Studio Code.
 
 - #### [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiA14WdBhD8ARIsANao07g6CkndNmxQPlHP92mM3VQBwb6lbQIg5FPinhmNFxWsAnM7BpA_PukaAldMEALw_wcB)
-  Balsamiq was used to help create the initial design for the websites layout.
+Balsamiq was used to help create the initial design for the websites layout.
+
+- #### [Google fonts](https://fonts.google.com/knowledge)
+Google Fonts was used to source both 'Oswald' and 'Press Start 2P' font families.
 
 ### Languages Used
 
