@@ -235,6 +235,12 @@ Chrome's lighthouse developer tool was used to check the performance of the quiz
 
 ![Lighthouse-test](./README-images/lighthouse-testing.PNG)
 
+#### JSHint
+
+All of the Javascript code was put through JSHint in order to check syntax issues and errors within the code, no errors were found throughout the code. 
+
+![JSHint](./README-images/jshint-test.PNG)
+
 
 ### Further Testing
 
