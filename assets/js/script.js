@@ -81,7 +81,6 @@ const startQuizContainer = document.getElementById("quiz-start");
 const gameContainer = document.getElementById("game-content");
 const questionContainer = document.getElementById("question-container");
 const questionContent = document.getElementById("question-content");
-// const startButton = document.getElementById("start-btn");
 const answerContainer = document.getElementById("answer-container");
 const countdownContainer = document.getElementById("timer");
 const finalScore = document.getElementById("final-score");
