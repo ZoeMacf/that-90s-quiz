@@ -52,7 +52,6 @@ p {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-size: 32px;
   color: #0f380f;
   font-weight: 700;
@@ -232,23 +231,20 @@ p {
   cursor: pointer;
 }
 
+.error-page body {
+  background-color: #9bbc0f;
+}
+
 h1.error-page {
   display: flex;
   justify-content: center;
   margin: 5rem auto;
   width: 13%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Press Start 2P", cursive;
   font-size: 120px;
   font-weight: 700;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
-    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  color: #fff;
-  animation: flicker 1.5s infinite alternate;
-  border: 0.2rem solid #fff;
-  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #e60073,
-    0 0 0.8rem #e60073, 0 0 2.8rem #e60073, inset 0 0 1.3rem #e60073;
-  border-radius: 0.2rem;
-  padding: 10px;
+  color: #272929;
+  text-shadow: none;
 }
 
 hr {
@@ -259,61 +255,22 @@ p.error-page {
   display: flex;
   margin: 30px auto;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
-    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  color: #fff;
+  font-family: "Oswald", sans-serif;
+  color: #272929;
+  font-size: 30px;
 }
 
-/* Flickering animation https://css-tricks.com/how-to-create-neon-text-with-css/ */
-
-@keyframes flicker {
-  0%,
-  18%,
-  22%,
-  25%,
-  53%,
-  57%,
-  100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #e60073,
-      0 0 80px #e60073, 0 0 90px #e60073, 0 0 100px #e60073, 0 0 150px #e60073;
-  }
-
-  20%,
-  24%,
-  55% {
-    text-shadow: none;
-  }
-}
-
-.coin {
-  color: #e60073;
-  padding: 5px;
-  font-size: 40px;
-}
-
-a {
-  display: flex;
-  padding: 5px;
-  margin: 30px auto;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
-    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  color: #fff;
-}
-
-a:link {
+a:link{
+  font-family: "Oswald", sans-serif;
   text-decoration: none;
-  color: #fff;
+  color: #272929;
+  margin: 40%;
+
 }
 
 a:visited {
-  color: #fff;
+  color: #272929;
+
 }
 
 /* Media Queries */
