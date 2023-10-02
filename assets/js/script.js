@@ -132,7 +132,7 @@ function showRules() {
 
 /**
  * Hides the question container and shows the start quiz container, then sets currentQuestion and userScore to 0
- * and will then display the question and timer.
+ * and will then display the question and timer - modal was made with the help of https://www.w3schools.com/howto/howto_css_modals.asp
  */
 
 function startQuiz() {

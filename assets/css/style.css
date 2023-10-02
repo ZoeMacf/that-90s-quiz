@@ -13,7 +13,7 @@ h1 {
   font-size: 50px;
   text-align: center;
 }
-
+/* Main styling for site */
 h2 {
   font-family: "Roboto", sans-serif;
 }
@@ -93,7 +93,7 @@ p {
   margin: auto;
   padding: 10px;
 }
-
+/* The answer buttons were given their own class to be able target them separately when sizing down screen and aligning elements */
 .answer-btn {
   display: flex;
   flex-wrap: wrap;
@@ -200,6 +200,7 @@ p {
   font-weight: 700;
 }
 
+/* Styling for rules modal */
 .rules-modal {
   display: none;
   flex-direction: column;
