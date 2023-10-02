@@ -238,6 +238,33 @@ Chrome's lighthouse developer tool was used to check the performance of the quiz
 
 ### Further Testing
 
+In order to fully test the functionality of the site, manual testing was done on the following devices.
+
+- Laptop Used : HP EliteBook 8570w
+- Mobile : Samsung S21 Plus
+
+The following browsers were used across the above devices
+
+* Google Chrome
+* Firefox
+* Safari (Emulated through Browserstacks)
+
+There were no major issues across Google Chrome, Firefox or Safari, however on Safari and Firefox there were some slight css issues regarding the text in the answer buttons. 
+
+| Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
+|---|---|---|---|---|
+| `Start Screen`  |   |   |   |   |
+| Rules Modal  |  The modal should display and when the button is clicked and be readable for the user | Click on the '?' button on start screen | A modal with the rules for the game appears  | Pass  |
+|  Start Quiz | Should display the first question with populated answer buttons and begin the timer. | Click on the 'Start Quiz' button.  |  Displays first question with answers to choose from, timer starts to count down from 10. | Pass |
+|  `Questions Screen` |   |   |   |   |
+|  Timer | Timer should countdown to 0 with no issues and disable buttons if an answer has not been clicked on.  |  Wait for timer to reach '0' | Answer buttons become disabled. | Pass |
+| Correct Answer  | When the correct answer is chosen, the button should turn green and the remaining buttons become disabled.  | Click on the correct answer.  |  Correct answer is coloured green | Pass  |
+|  Wrong Answer | When the correct answer is chosen, the button should turn red and the remaining buttons become disabled.  | Click on the wrong answer. | Wrong answer is coloured red  | Pass  |
+|  Next Question Button | When clicked should display the next question and reset the timer  | Click the next question button  | Next question on the quiz is displayed and timer resets to '10'  | Pass 
+| `Results Screen`   |   |   |   |   |
+|  User's Score | As answers are selected throughout the quiz the program should check the answers, add the score and finally display to the user.  | Run through quiz selecting a combination of correct and wrong answers to ensure program factors in both.  | Correct score based on the answers chosen is displayed at the end.  | Pass  |
+|  Restart Quiz button| Reset all values and bring the user back to the start screen for the quiz.  | Click on next question button  |  Directed back to the start screen | Pass  |
+
 
 ### Bugs Found
 
