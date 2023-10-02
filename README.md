@@ -79,18 +79,40 @@ Initially this site had a colour scheme of neutral blues and a simple design, ho
 
 ![Start-Screen](./README-images/start-screen.png)
 
-#### Questions Page
+#### Questions Screen
 
 ![Questions-Screen](./README-images/questions-screen.png)
 
+
+## Original Design
+
+#### Start Screen
+
+![Start-Screen](./README-images/original-start-screen.PNG)
+
+#### Questions Screen
+
+![Questions-Screen](./README-images/original-questions-screen.PNG)
+
+#### Final Score Screen
+
+![Final-Score-Screen](./README-images/original-results-screen.PNG)
+
 ## Final Design
 
-### Quiz
+#### Start Screen
 
-#### Desktop Version
+![Start-Screen](./README-images/final-start-screen.PNG)
 
+#### Questions Screen
 
-#### Mobile Version
+![Questions-Screen](./README-images/final-questions-screen.PNG)
+
+#### Final Score Screen
+
+![Final-Score-Screen](./README-images/final-results-screen.PNG)
+
+#### Mobile View
 
 ### Features
 
