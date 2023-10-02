@@ -26,12 +26,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  border: solid 2px #2d3047;
+  width: 40px;
+  height: 40px;
+  border: solid 2px #0f380f;
   border-radius: 50%;
-  background-color: #fff;
-  color: #2d3047;
+  background-color: #9bbc0f;
+  color: #0f380f;
 }
 
 .quiz-rules {
