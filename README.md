@@ -145,8 +145,10 @@ A timer was added to the quiz to give the user a time limit to answer the questi
 ![Timer](./README-images/timer.PNG)
 
 ### Future Implementations
- 
-   
+
+In future I would like to have the questions and answers to shuffle on each restart. I would also like to allow the user to save their score and be able to access a high score section of the quiz. 
+
+Allow the user to share their highscore on various social media accounts. 
 ## Accessibility
 
 
