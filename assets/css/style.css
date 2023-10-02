@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap");
 
 body {
-  background-color: #0c0f0a;
+  background-color: #0C0F0A;
 }
 
 /* Text-shadow was used to create a border around text source for values was https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
 h1 {
   font-family: "Shrikhand", cursive;
-  color: #e75a7c;
-  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
-    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  color: #E75A7C;
+  text-shadow: 2px 0 #FFF, -2px 0 #FFF, 0 2px #FFF, 0 -2px #FFF, 1px 1px #FFF,
+    -1px -1px #FFF, 1px -1px #FFF, -1px 1px #FFF;
   font-size: 50px;
   text-align: center;
 }
@@ -28,10 +28,10 @@ p {
   justify-content: center;
   width: 30px;
   height: 30px;
-  border: solid 2px #2d3047;
+  border: solid 2px #2D3047;
   border-radius: 50%;
-  background-color: #fff;
-  color: #2d3047;
+  background-color: #FFF;
+  color: #2D3047;
 }
 
 .quiz-rules {
@@ -54,7 +54,7 @@ p {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 32px;
-  color: #eee5e9;
+  color: #EEE5E9;
   font-weight: 700;
 }
 
@@ -63,7 +63,7 @@ p {
   height: 420px;
   padding: 10px;
   margin: auto;
-  border: solid 2px #e75a7c;
+  border: solid 2px #E75A7C;
   box-shadow: 0 4px 8px 0 rgba(231, 90, 124, 0.2),
     0 6px 20px 0 rgba(231, 90, 124, 0.19),
     inset 0 6px 20px 0 rgba(231, 90, 124, 0.19),
@@ -78,7 +78,7 @@ p {
   padding: 5px;
   margin: 2px;
   font-family: "Roboto", sans-serif;
-  color: #eee5e9;
+  color: #EEE5E9;
   font-weight: 600;
 }
 
@@ -100,7 +100,7 @@ p {
   height: 40px;
   width: 320px;
   margin: 20px;
-  background-color: #e75a7c;
+  background-color: #E75A7C;
   border: none;
   padding: 12px 28px;
   text-align: center;
@@ -108,7 +108,7 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Roboto", sans-serif;
-  color: #eee5e9;
+  color: #EEE5E9;
   font-weight: 700;
 }
 
@@ -118,12 +118,12 @@ p {
 }
 
 .correct-answer {
-  background-color: green;
+  background-color: #76C46C;
   opacity: 0.6;
 }
 
 .wrong-answer {
-  background-color: red;
+  background-color: #D63A3A;
   opacity: 0.6;
 }
 
@@ -134,13 +134,13 @@ p {
   margin-left: auto;
   width: 50px;
   height: 50px;
-  border: solid 5px #e75a7c;
+  border: solid 5px #E75A7C;
   border-radius: 50%;
   background-color: rgba(12, 15, 10, 0.4);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  color: #eee5e9;
+  color: #EEE5E9;
 }
 
 .btn {
@@ -149,7 +149,7 @@ p {
   height: 40px;
   width: 150px;
   margin: auto;
-  background-color: #e75a7c;
+  background-color: #E75A7C;
   border: none;
   padding: 12px 28px;
   text-align: center;
@@ -158,7 +158,7 @@ p {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Roboto", sans-serif;
-  color: #eee5e9;
+  color: #EEE5E9;
   font-weight: 700;
   font-size: 14px;
 }
@@ -170,7 +170,7 @@ p {
   height: 40px;
   width: 150px;
   margin: auto;
-  background-color: #e75a7c;
+  background-color: #E75A7C;
   border: none;
   padding: 12px 28px;
   text-align: center;
@@ -179,7 +179,7 @@ p {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Roboto", sans-serif;
-  color: #eee5e9;
+  color: #EEE5E9;
   font-weight: 700;
   font-size: 14px;
 }
@@ -196,7 +196,7 @@ p {
 .show-final-score {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  color: #eee5e9;
+  color: #EEE5E9;
   font-weight: 700;
 }
 
@@ -213,14 +213,14 @@ p {
 }
 
 .modal-content {
-  background-color: #eee5e9;
+  background-color: #EEE5E9;
   margin: 15% auto;
   padding: 20px;
   border: none;
   font-size: 16px;
   border-radius: 5px;
   width: 50%;
-  color: #0c0f0a;
+  color: #0C0F0A;
 }
 
 .close-btn {
@@ -244,13 +244,13 @@ h1.error-page {
   font-family: "Roboto", sans-serif;
   font-size: 120px;
   font-weight: 700;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
-    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  color: #fff;
+  text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #E60073, 0 0 40px #E60073,
+    0 0 50px #E60073, 0 0 60px #E60073, 0 0 70px #E60073;
+  color: #FFF;
   animation: flicker 1.5s infinite alternate;
-  border: 0.2rem solid #fff;
-  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #e60073,
-    0 0 0.8rem #e60073, 0 0 2.8rem #e60073, inset 0 0 1.3rem #e60073;
+  border: 0.2rem solid #FFF;
+  box-shadow: 0 0 0.2rem #FFF, 0 0 0.2rem #FFF, 0 0 2rem #E60073,
+    0 0 0.8rem #E60073, 0 0 2.8rem #E60073, inset 0 0 1.3rem #E60073;
   border-radius: 0.2rem;
   padding: 10px;
 }
@@ -266,9 +266,9 @@ p.error-page {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 700;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
-    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  color: #fff;
+  text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #E60073, 0 0 40px #E60073,
+    0 0 50px #E60073, 0 0 60px #E60073, 0 0 70px #E60073;
+  color: #FFF;
 }
 
 /* Flickering animation https://css-tricks.com/how-to-create-neon-text-with-css/ */
@@ -281,8 +281,8 @@ p.error-page {
   53%,
   57%,
   100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #e60073,
-      0 0 80px #e60073, 0 0 90px #e60073, 0 0 100px #e60073, 0 0 150px #e60073;
+    text-shadow: 0 0 4px #FFF, 0 0 11px #FFF, 0 0 19px #FFF, 0 0 40px #E60073,
+      0 0 80px #E60073, 0 0 90px #E60073, 0 0 100px #E60073, 0 0 150px #E60073;
   }
 
   20%,
@@ -293,7 +293,7 @@ p.error-page {
 }
 
 .coin {
-  color: #e60073;
+  color: #E60073;
   padding: 5px;
   font-size: 40px;
 }
@@ -306,18 +306,18 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 700;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
-    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  color: #fff;
+  text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #E60073, 0 0 40px #E60073,
+    0 0 50px #E60073, 0 0 60px #E60073, 0 0 70px #E60073;
+  color: #FFF;
 }
 
 a:link {
   text-decoration: none;
-  color: #fff;
+  color: #FFF;
 }
 
 a:visited {
-  color: #fff;
+  color: #FFF;
 }
 
 /* Media Queries */
