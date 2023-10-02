@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Press+Start+2P&display=swap');
 
 body {
   background-color: #c4bebb;
@@ -6,7 +6,7 @@ body {
 
 /* Text-shadow was used to create a border around text source for values was https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
 h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #2d3047;
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
     -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
@@ -15,11 +15,11 @@ h1 {
 }
 /* Main styling for site */
 h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 p {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .rules-btn {
@@ -58,7 +58,7 @@ p {
 }
 
 .quiz-intro p {
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   font-size: 1.2rem;
   line-height: 2rem;
 }
@@ -78,7 +78,7 @@ p {
   flex-direction: column;
   padding: 5px;
   margin: 2px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #0f380f;
   font-weight: 600;
 }
@@ -109,7 +109,7 @@ p {
   padding: 15px 28px;
   text-align: center;
   font-size: 0.8rem;
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   color: #0f380f;
   font-weight: 700;
 }
@@ -134,7 +134,7 @@ p {
   border: solid 5px #8bac0f;
   border-radius: 50%;
   background-color: rgba(12, 15, 10, 0.4);
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   font-weight: 700;
   font-size: 20px;
   color: #0f380f;
@@ -152,7 +152,7 @@ p {
     0 8px 0 0 #306230;
   padding: 20px 40px;
   text-align: center;
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   color: #0f380f;
   font-weight: 700;
   font-size: 18px;
@@ -172,7 +172,7 @@ p {
   padding: 12px 20px;
   text-align: center;
   font-size: 14px;
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   color: #0f380f;
   font-weight: 700;
   font-size: 0.7rem;
@@ -189,7 +189,7 @@ p {
 
 .show-final-score {
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #0f380f;
   font-weight: 700;
 }
@@ -240,7 +240,7 @@ h1.error-page {
   justify-content: center;
   margin: 5rem auto;
   width: 13%;
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   font-size: 120px;
   font-weight: 700;
   color: #272929;
@@ -255,13 +255,13 @@ p.error-page {
   display: flex;
   margin: 30px auto;
   justify-content: center;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #272929;
   font-size: 30px;
 }
 
 a:link{
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-decoration: none;
   color: #272929;
   margin: 40%;

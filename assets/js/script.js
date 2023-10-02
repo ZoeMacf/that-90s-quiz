@@ -1,70 +1,70 @@
 let questionsArray = [{
-	question: "Which American rock band, formed in 1990, released the hit song 'Under the Bridge'?",
-	answers: ["Foo Fighters", "Weezer", "Red Hot Chili Peppers", "Blink-182"],
-	correct: "Red Hot Chili Peppers",
+	question: 'Which American rock band, formed in 1990, released the hit song "Under the Bridge"?',
+	answers: ['Foo Fighters', 'Weezer', 'Red Hot Chili Peppers', 'Blink-182'],
+	correct: 'Red Hot Chili Peppers',
 }, {
-	question: "What computer game, released in 1991, challenged players to guide a group of green-haired creatures through various obstacles?",
-	answers: ["Lemurs", "Monkeys", "Frogger", "Lemmings"],
-	correct: "Lemmings",
+	question: 'What computer game, released in 1991, challenged players to guide a group of green-haired creatures through various obstacles?',
+	answers: ['Lemurs', 'Monkeys', 'Frogger', 'Lemmings'],
+	correct: 'Lemmings',
 }, {
-	question: "Who played the title character in the 1990s TV show “Buffy the Vampire Slayer”?",
-	answers: ["Sarah Michelle Gellar", "Jennifer Love Hewitt", "Alicia Silverstone", "Melissa Joan Hart", ],
-	correct: "Sarah Michelle Gellar",
+	question: 'Who played the title character in the 1990s TV show “Buffy the Vampire Slayer”?',
+	answers: ['Sarah Michelle Gellar', 'Jennifer Love Hewitt', 'Alicia Silverstone', 'Melissa Joan Hart', ],
+	correct: 'Sarah Michelle Gellar',
 }, {
-	question: "What was the highest-grossing film of the 1990s?",
-	answers: ["Shawshank", "Titanic", "Bodyguard", "Braveheart"],
-	correct: "Titanic",
+	question: 'What was the highest-grossing film of the 1990s?',
+	answers: ['Shawshank', 'Titanic', 'Bodyguard', 'Braveheart'],
+	correct: 'Titanic',
 }, {
-	question: "Which country hosted the 1994 World Cup Finals?",
-	answers: ["France", "Turkey", "Australia", "USA"],
-	correct: "USA",
+	question: 'Which country hosted the 1994 World Cup Finals?',
+	answers: ['France', 'Turkey', 'Australia', 'USA'],
+	correct: 'USA',
 }, {
-	question: "Who is the “Sesame Street” star who was tickled with laughter and became the Christmas 1996 must-have toy?",
-	answers: ["Big Bird", "Bert", "Oscar", "Elmo"],
-	correct: "Elmo",
+	question: 'Who is the “Sesame Street” star who was tickled with laughter and became the Christmas 1996 must-have toy?',
+	answers: ['Big Bird', 'Bert', 'Oscar', 'Elmo'],
+	correct: 'Elmo',
 }, {
-	question: "In the television series “The Fresh Prince of Bel-Air,” what was the name of the family butler?",
-	answers: ["Jeeves", "Geoffrey", "George", "Richard"],
-	correct: "Geoffrey",
+	question: 'In the television series “The Fresh Prince of Bel-Air,” what was the name of the family butler?',
+	answers: ['Jeeves', 'Geoffrey', 'George', 'Richard'],
+	correct: 'Geoffrey',
 }, {
-	question: "Who made rockers sad with the somber song 'Creep'?",
-	answers: ["Nirvana", "The Smashing Pumpkins", "Alice in Chains", "Radiohead", ],
-	correct: "Radiohead",
+	question: 'Who made rockers sad with the somber song "Creep"?',
+	answers: ['Nirvana', 'The Smashing Pumpkins', 'Alice in Chains', 'Radiohead', ],
+	correct: 'Radiohead',
 }, {
-	question: "What was the name of the haircut inspired by the popular 1990s TV show Friends?",
-	answers: ["The Bing", "The How You Doin?", "The Rachel", "The Janice"],
-	correct: "The Rachel",
+	question: 'What was the name of the haircut inspired by the popular 1990s TV show Friends?',
+	answers: ['The Bing', 'The How You Doin?', 'The Rachel', 'The Janice'],
+	correct: 'The Rachel',
 }, {
-	question: "When did the Google search engine launch?",
-	answers: ["1997", "1994", "1998", "1999"],
-	correct: "1998",
+	question: 'When did the Google search engine launch?',
+	answers: ['1997', '1994', '1998', '1999'],
+	correct: '1998',
 }, ];
 
-const startQuizContainer = document.getElementById("quiz-start");
-const questionContainer = document.getElementById("question-container");
-const questionContent = document.getElementById("question-content");
-const answerContainer = document.getElementById("answer-container");
-const countdownContainer = document.getElementById("timer");
-const finalScore = document.getElementById("final-score");
-const rulesButton = document.getElementById("rules-btn");
+const startQuizContainer = document.getElementById('quiz-start');
+const questionContainer = document.getElementById('question-container');
+const questionContent = document.getElementById('question-content');
+const answerContainer = document.getElementById('answer-container');
+const countdownContainer = document.getElementById('timer');
+const finalScore = document.getElementById('final-score');
+const rulesButton = document.getElementById('rules-btn');
 let currentQuestion = 0;
 let userScore = 0;
 let startButton;
 let timer;
 let countdown;
 let nextButtonClick;
-let nextButton = document.createElement("button");
-nextButton.classList.add("next-finish-btn");
-nextButton.innerHTML = "Next Question";
-nextButton.addEventListener("click", nextQuestion);
+let nextButton = document.createElement('button');
+nextButton.classList.add('next-finish-btn');
+nextButton.innerHTML = 'Next Question';
+nextButton.addEventListener('click', nextQuestion);
 questionContainer.append(nextButton);
-document.addEventListener("DOMContentLoaded", function() {
-	questionContainer.classList.add("hide");
+document.addEventListener('DOMContentLoaded', function() {
+	questionContainer.classList.add('hide');
 	startButton = document.createElement('button');
 	startButton.classList.add('btn');
 	startButton.innerHTML = 'Start Quiz';
 	startQuizContainer.append(startButton);
-	startButton.addEventListener("click", startQuiz);
+	startButton.addEventListener('click', startQuiz);
 	showRules();
 });
 
@@ -74,17 +74,17 @@ document.addEventListener("DOMContentLoaded", function() {
  */
 
 function showRules() {
-	let rulesModal = document.getElementById("rules");
-	let closeButton = document.getElementsByClassName("close-btn")[0];
-	rulesButton.addEventListener("click", function() {
-		rulesModal.style.display = "flex";
+	let rulesModal = document.getElementById('rules');
+	let closeButton = document.getElementsByClassName('close-btn')[0];
+	rulesButton.addEventListener('click', function() {
+		rulesModal.style.display = 'flex';
 	});
-	closeButton.addEventListener("click", function() {
-		rulesModal.style.display = "none";
+	closeButton.addEventListener('click', function() {
+		rulesModal.style.display = 'none';
 	});
-	window.addEventListener("click", function(event) {
+	window.addEventListener('click', function(event) {
 		if(event.target == rulesModal) {
-			rulesModal.style.display = "none";
+			rulesModal.style.display = 'none';
 		}
 	});
 }
@@ -95,8 +95,8 @@ function showRules() {
  */
 
 function startQuiz() {
-	questionContainer.classList.remove("hide");
-	startQuizContainer.classList.add("hide");
+	questionContainer.classList.remove('hide');
+	startQuizContainer.classList.add('hide');
 	currentQuestion = 0;
 	userScore = 0;
 	displayQuestion();
@@ -112,7 +112,7 @@ function startQuiz() {
 function startTimer() {
 	timer = 10;
 	countdownContainer.innerText = `${timer}`;
-	nextButton.addEventListener("click", function(evt) {
+	nextButton.addEventListener('click', function(evt) {
 		nextButtonClick = evt.target;
 	});
 	countdown = setInterval(() => {
@@ -135,14 +135,14 @@ function startTimer() {
  */
 
 function displayQuestion() {
-	rulesButton.classList.add("hide");
+	rulesButton.classList.add('hide');
 	let questionText = questionsArray[currentQuestion];
 	questionContent.innerHTML = questionText.question;
 	let answers = questionsArray[currentQuestion].answers;
 	answers.forEach((answer) => {
-		let button = document.createElement("button");
+		let button = document.createElement('button');
 		button.innerHTML = answer;
-		button.classList.add("answer-btn");
+		button.classList.add('answer-btn');
 		answerContainer.appendChild(button);
 	});
 }
@@ -168,7 +168,7 @@ function nextQuestion() {
 		clearInterval(countdown);
 		startTimer();
 	} else {
-		nextButton.classList.add("hide");
+		nextButton.classList.add('hide');
 		showFinalScore();
 	}
 }
@@ -180,22 +180,22 @@ function nextQuestion() {
  */
 
 function showFinalScore() {
-	let finishButton = document.createElement("button");
-	finishButton.innerText = "Finish Quiz";
-	finishButton.classList.add("next-finish-btn");
+	let finishButton = document.createElement('button');
+	finishButton.innerText = 'Finish Quiz';
+	finishButton.classList.add('next-finish-btn');
 	questionContainer.append(finishButton);
-	finishButton.addEventListener("click", function() {
-		questionContainer.classList.add("hide");
-		let scoreHeading = document.createElement("h2");
+	finishButton.addEventListener('click', function() {
+		questionContainer.classList.add('hide');
+		let scoreHeading = document.createElement('h2');
 		scoreHeading.innerText = `You answered ${userScore} out of ${currentQuestion} correct!`;
-		finalScore.classList.remove("hide");
-		finalScore.classList.add("show-final-score");
+		finalScore.classList.remove('hide');
+		finalScore.classList.add('show-final-score');
 		finalScore.append(scoreHeading);
-		let restartQuizbtn = document.createElement("button");
-		restartQuizbtn.innerHTML = "Restart Quiz";
+		let restartQuizbtn = document.createElement('button');
+		restartQuizbtn.innerHTML = 'Restart Quiz';
 		finalScore.append(restartQuizbtn);
-		restartQuizbtn.classList.add("btn");
-		restartQuizbtn.addEventListener("click", restartQuiz);
+		restartQuizbtn.classList.add('btn');
+		restartQuizbtn.addEventListener('click', restartQuiz);
 	});
 }
 
@@ -206,15 +206,15 @@ function showFinalScore() {
  */
 
 function checkAnswer() {
-	answerContainer.addEventListener("click", function(evt) {
+	answerContainer.addEventListener('click', function(evt) {
 		let userInput = evt.target;
 		let correctAnswers = questionsArray[currentQuestion].correct;
 		if(userInput.textContent === correctAnswers) {
 			userScore++;
 			disableButtons();
-			userInput.classList.add("correct-answer");
+			userInput.classList.add('correct-answer');
 		} else {
-			userInput.classList.add("wrong-answer");
+			userInput.classList.add('wrong-answer');
 			disableButtons();
 		}
 	});
@@ -227,7 +227,7 @@ checkAnswer();
  */
 
 function disableButtons() {
-	let answerButtons = document.getElementsByClassName("answer-btn");
+	let answerButtons = document.getElementsByClassName('answer-btn');
 	for(let i = 0; i < answerButtons.length; i++) {
 		answerButtons[i].disabled = true;
 	}
