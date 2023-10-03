@@ -140,6 +140,14 @@ p {
   color: #0f380f;
 }
 
+.current-score {
+  display: flex;
+  margin: 1px 50px;
+  font-family: 'Oswald', sans-serif;
+  color: #272929;;
+  
+}
+
 .btn {
   display: flex;
   justify-content: center;

@@ -53,6 +53,7 @@ let startButton;
 let timer;
 let countdown;
 let nextButtonClick;
+let currentScore = document.getElementById('score');
 let nextButton = document.createElement('button');
 nextButton.classList.add('next-finish-btn');
 nextButton.innerHTML = 'Next Question';
@@ -211,6 +212,7 @@ function checkAnswer() {
 		let correctAnswers = questionsArray[currentQuestion].correct;
 		if(userInput.textContent === correctAnswers) {
 			userScore++;
+			currentScore.innerText = `Current Score: ${userScore}`;
 			disableButtons();
 			userInput.classList.add('correct-answer');
 		} else {
