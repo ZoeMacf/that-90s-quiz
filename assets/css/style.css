@@ -45,6 +45,7 @@ p {
   list-style-type: none;
   margin: 5px;
   line-height: 25px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .quiz-intro {
@@ -78,7 +79,7 @@ p {
   flex-direction: column;
   padding: 5px;
   margin: 2px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #0f380f;
   font-weight: 600;
 }
@@ -142,7 +143,7 @@ p {
 
 .current-score {
   display: flex;
-  margin: 1px 50px;
+  margin: 1px 360px;
   font-family: 'Oswald', sans-serif;
   color: #272929;;
   
@@ -192,7 +193,7 @@ p {
 
 .show-final-score {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #0f380f;
   font-weight: 700;
 }
