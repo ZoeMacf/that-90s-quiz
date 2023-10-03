@@ -45,7 +45,6 @@ Users can test their knowledge of the 90's across many genres.
 - I want to easily access the rules of the quiz.
 - I want to be able to start the quiz with ease.
 - I want to be able to view both the current score and a timer.
-- I would like to be able to see the correct answer if I choose wrong.
 - I would like to be able to access and play the quiz across many devices with no performance or readability issues. 
 
 ## Design
@@ -146,7 +145,7 @@ The rules for the quiz can be accessed through a rules button located in top lef
 
 #### Timer
 
-A timer was added to the quiz to give the user a time limit to answer the questions. If an answer is not choesen within this timeframe the buttons become disabled and the user has to skip the question.
+A timer was added to the quiz to give the user a time limit to answer the questions. If an answer is not chosen within this time frame the buttons become disabled and the user has to skip the question.
 
 ![Timer](./README-images/timer.PNG)
 
@@ -290,7 +289,7 @@ When using the quiz the timer would countdown from the initial value of 15 but w
 
 In order to fix this, I declared the timer value outside of the countdown function, gave it a value within the function. 
 
-As well as this, setting the timer innerHTML to timer was causing a delay in displaying the time which factored in to the timer stopping at 1. This was fixed by setting the innterHTML before the countdown and inside it. 
+As well as this, setting the timer innerHTML to timer was causing a delay in displaying the time which factored in to the timer stopping at 1. This was fixed by setting the innerHTML before the countdown and inside it. 
 
 #### Bug 2
 
