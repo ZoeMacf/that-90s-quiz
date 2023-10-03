@@ -303,6 +303,12 @@ a:visited {
     margin-bottom: 5px;
   }
 
+  .current-score {
+    display: flex;
+    margin: 1px 50px;
+    
+  }
+
   .answers {
     margin: 10px auto;
   }
@@ -353,7 +359,12 @@ a:visited {
     height: 420px;
     font-size: 1.1rem;
   }
-
+  
+  .current-score {
+    display: flex;
+    margin: 1px 30px;
+    
+  }
   .quiz-intro {
     margin: -55px auto;
   }
@@ -437,6 +448,12 @@ a:visited {
     font-size: 16px;
   }
 
+  .current-score {
+    display: flex;
+    margin: 1px 10px;
+    
+  }
+
   .question-content {
     height: 10px;
     margin: 5px;
@@ -501,6 +518,12 @@ a:visited {
     font-size: 1.1rem;
   }
 
+  .current-score {
+    display: flex;
+    margin: 1px 5px;
+    
+  }
+
   .quiz-intro {
     margin: 25px auto;
   }
@@ -557,86 +580,6 @@ a:visited {
   }
 }
 
-
-@media screen and (max-width: 375px) {
-  h1 {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 1.1rem;
-    line-height: 3rem;
-    margin-top: 25%;
-  }
-
-  .quiz-intro p {
-    margin: 10px;
-    font-size: 14px;
-  }
-
-  .game-container {
-    width: 85%;
-    height: 420px;
-    font-size: 1.1rem;
-  }
-
-  .quiz-timer {
-    height: 30px;
-    width: 30px;
-    font-size: 16px;
-  }
-
-  .question-content {
-    display: flex;
-    height: 10px;
-    margin: 5px;
-    font-size: 14px;
-    padding: 0;
-  }
-
-  .btn {
-    margin: 20px auto;
-    width: 200px;
-    height: 50px;
-    padding: 18px 5px;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-
-  .answers {
-    margin: 25px auto;
-  }
-
-  .answer-btn {
-    width: 220px;
-    height: 35px;
-    margin: 25px auto;
-    padding: 12px 15px;
-    font-size: 0.6rem;
-  }
-
-  .next-finish-btn {
-    margin: -35px auto;
-  }
-
-  .rules-modal {
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-  }
-
-  .modal-content {
-    width: 70%;
-    margin: 30% auto;
-  }
-
-  .rules-info {
-    margin: 30px 10px;
-    padding: 2px;
-  }
-  
-}
-
 @media screen and (max-width: 384px) {
   h1 {
     font-size: 40px;
@@ -657,6 +600,12 @@ a:visited {
     width: 85%;
     height: 450px;
     font-size: 1.1rem;
+  }
+
+  .current-score {
+    display: flex;
+    margin: 1px 5px;
+    
   }
 
   .quiz-timer {
@@ -740,6 +689,12 @@ a:visited {
     width: 85%;
     height: 420px;
     font-size: 1.1rem;
+  }
+
+  .current-score {
+    display: flex;
+    margin: 1px 5px;
+    
   }
 
   .quiz-timer {
@@ -804,6 +759,12 @@ a:visited {
 
     p {
       font-size: 1rem;
+    }
+
+    .current-score {
+      display: flex;
+      margin: 1px 5px;
+      
     }
 
     .game-container {
