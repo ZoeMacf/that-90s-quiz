@@ -4,6 +4,8 @@ That 90's Quiz is a quiz to test the user's 90's trivia, they will be able to se
 
 The live site can be viewed here [The 90's Quiz](https://zoemacf.github.io/that-90s-quiz/) .
 
+![Amiresponsive-image](./README-images/amiresponsive-image.PNG)
+
 ## Contents
 
 * [User Experience](#user-experience-ux)
@@ -311,6 +313,8 @@ Unfortunately I have been unable to fix this issue, but believe that by changing
 * The pixel border effect on the buttons was created after reviewing a post on [StackOverflow](https://stackoverflow.com/questions/61771309/pixel-art-style-border-on-tumblr-theme)
 
 * Function for checking which answer was selected by the user was created thanks a post on [StackOverflow](https://stackoverflow.com/questions/66193592/how-i-know-which-button-been-clicked-in-class-of-buttons)
+
+* Image of site displaying on various screen sizes was created through [AmIResponsive](https://ui.dev/amiresponsive)
 
 ### Acknowledgements
 
